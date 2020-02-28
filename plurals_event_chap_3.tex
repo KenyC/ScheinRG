@@ -11,10 +11,9 @@
 \lingset{interpartskip = -5pt}
 \lingset{aboveexskip = 3pt,belowexskip = 3pt}
 
-\newcommand{\ag}{\textsc{Agent}}
-\newcommand{\thm}{\textsc{Theme}}
-\newcommand{\goal}{\textsc{Goal}}
-%\endofdump
+\definecolor{darkred}{rgb}{0.4,0,0}
+
+
 
 \title{Plurals and events (chap. 3)}
 \author{Keny Chatain}
@@ -39,102 +38,116 @@ In other words, natural language predicates are separated in the \quo{logical sy
 
 \section*{Claim I: singulars and plurals must be kept ontologically separate}
 
-The argument consists in exhibit some quantifiers which, despite number morphology
+The argument consists in exhibiting one quantifier which, despite plural number morphology, must quantify over singularities: the quantifier \emph{few}. This state of affairs
 
-\subsection{}
+More generally then, it is claimed that quantifiers must sorted in two classes: \textbf{Sg} and \textbf{Pl} (irrespective of their number morphology). This is expected under the view that variables but more difficult to 
 
-
-The opposite view under-generates, it is claimed. The opposite view is that there is a single domain of both singularities and pluralities. To accommodate plurals, the semanticist needs to enrich the meaning of all denotations that depend on the domain of individuals $D_e$. This is feasible enough for predicates:
+\paragraph{If plural entities existed\ldots}
+%
+Aiming for a contradiction, let us assume that there are indeed plural entities and these may be true or false of the same predicates which singular entities may be true of:
 
 \ex
 $\exte{cluster}$ is true of $x$ iff $x$ are clustered
 \xe
 %
-However, quantifiers raise a challenge. Let's look at \emph{few}. Intuitively, \emph{few} counts singularities, cf \cnextx{a}. Once plurals are included, we need to find a way to retrieve singularities that we can count. Schein's suggested solution is given in \cnextx{b}.
+However, quantifiers raise a challenge. Let's look at \emph{few}. If we're only interested in singularities, we may write a definition of it as follows:
 
-\pex
-\a $\dbb{few}(P)(Q)$ true iff $\#P\cap Q$ is little (compared to $\#P$)
-\a $\dbb{few}(P)(Q)$ true iff $\#\left\lbrace x\ \middle|\ 
+\ex \label{naive}
+ $\dbb{few}(P)(Q)$ true iff $\#P\cap Q$ is little (compared to $\#P$)
+\xe
+%
+However, this is inadequate if the predicate is true of plural entities. Note that \emph{few} can combine with collective predicates, which can only be true of plural entities:
+
+\ex\label{collab}
+Few composers collaborated.
+\xe
+%
+Applying \cref{naive} would lead us to count groups of composers. But intuitively, \emph{few} is still counting single composers in that case, not group of composers. Schein suggests to adapt the denotation of \emph{few} to keep quantification of singularities:
+
+\ex
+{\color{darkred}$\dbb{few}(P)(Q)$ true iff $\#\left\lbrace x\ \middle|\ 
 \begin{array}{l}
 x\text{ is atomic}\\
-\exists y, x\prec_{part} y \wedge P(y)\\
-\exists y', x\prec_{part} y' \wedge Q(y') \wedge P(y')
+{\color{darkblue}\exists y, x\prec_{part} y \wedge Q(y) \wedge P(y)}
 \end{array}
 \right\rbrace$ is little \label{few2}
-\xe
+}\xe
 %
+This is adequate for \cnextx{collab}. I have distinguished a blue part -the counting of singularities per se- and a red part -the creation of a plural variable that can be fed to collective predicate.
+In the sequel, Schein will show that the blue part and the red part come apart, suggesting that not both are core to the meaning of \emph{few}.
 
-\paragraph{Why this is inadequate.} We hardwired \emph{few} to quantify over existentially over groups. However, this is inadequate because:
-
-\pex
-\a Few composers collaborated on less than 4 operas
-\a \textbf{\cnextx{a}'s problematic reading:} few  composers collaborated with someone else on less than 4 operas\\
-False if some composer never collaborated\footnote{And there are many composers}
-\a \textbf{\cnextx{a}'s actual reading (dubbed the \emph{semidistributive} reading):} few composers collaborated on less than 4 operas with anyone else\\ 
-In other words, many composers have more than 4 collaborations
-\xe
-%
-However, \clastx{b}, given the denotation in \cref{few2}, asks us to count the atomic $x$ who are part of a group $X$ which collaborated in less than 4 operas, i.e. the problematic reading. The solution seems to be to revise our assumptions about what the scope of \emph{few} means. Schein seems to assume \cnextx{a}, but it is probably akin to 
+\paragraph{Split-scope.} If we insert another quantifier in between the collective predicate and \emph{few}, we see that the red part and the blue part split scope.
 
 \pex
-\a $\lambda X.$ the number of operas that $X$ together collaborated on is less than 4
-\a $\lambda x.$ the number of operas that $x$ collaborated with anyone else on is less than 4
+\a Few composers [collaborated on less than 4 operas]
+\a 
+\textbf{\cnextx{a}'s predicted reading:}\\
+ for few composers, there is someone that they collaborated with on less than 4 operas\\
+{\color{darkred}red} $\gg$ {\color{darkblue}blue}$\gg$ less than 4
+\a \textbf{\cnextx{a}'s actual reading\footnote{Dubbed the \emph{semidistributive} reading?}:}\\
+ few composers had less than 4 collaborations\\ 
+% In other words, many composers have more than 4 collaborations
+{\color{darkred}red} $\gg$ less than 4 $\gg$ {\color{darkblue}blue}
 \xe
 %
-\clastx{b} is an available interpretation in singular sentences:
+\clastx{b} is what we obtain from plugging in the meaning of  \emph{few} to the bracketed predicate in \clastx{a}. This gives us a very strong reading, where there were collaborations between almost every pair of composers. For instance, the sentence is made false by the existence of a single composer who never collaborated with anyone. 
+
+Rather, the meaning seems to be \clastx{c}, where the creation of a plural group (the blue part) happens below the \quo{less than 4} quantification. Note that this group creation part is also observed in sentences that do not involve \emph{few} such as \cnextx. They allow a singular quantifier to combine with a seemingly collective predicate:
 
 \ex
 Hammerstein collaborated on less than 4 operas
 \xe
 %
-Schein seems to accept this, but says that this is only going in the sense of saying that \emph{few} quantifies over singularities - the exact claim he is trying to make.
+All of this suggests that the true meaning of \emph{few} only contains the red part
 
-\paragraph{What goes wrong in general.} In Schein's view, there are two classes of quantifiers:
+\ex
+$\dbb{few}(P)(Q)$ true iff {\color{darkred}$\#\left\lbrace x\ \middle|\ 
+\begin{array}{l}
+x\text{ is atomic}\\
+P(x)
+\end{array}
+\right\rbrace$ is little \label{few2}
+}\xe
+%
+This means that \emph{few}, despite number marking, quantifies over singularities.
+
+\paragraph{What will go wrong in general.} 
+Schein attempts to give the general shape of the problematic examples.
+In Schein's view, there are two classes of quantifiers:
 
 \begin{itemize}
 \item \textbf{Class Sg:} quantifiers over singularities 
 \item \textbf{Class Pl:} quantifiers over pluralities
 \end{itemize}
 %
-In Schein's view, both can combine with collectives, but Sg quantifiers will need an extra converting step. This extra converting step (to be discussed in chap. 8) must take place below event closure, as far as I understand. Thus, a problem will arise whenever a Sg quantifier will try to combine with plural demanding expression across an event closure. An intermediate $Q$ is inserted to ensure that Sg indeed outscopes event closure. Crucially, $Q$ must not commute with $\exists e$\footnote{If my reading is correct, Schein confuses non-increasing quantifiers with quantifiers that commute with existentials. The example with \emph{every} to be given below shows an \emph{increasing} quantifier, that does not commute with existentials\ldots}
+In Schein's view, both can combine with collectives, but Sg quantifiers will need an extra converting step (the blue part). This extra converting step (to be discussed in chap. 8) must take place below event closure, as far as I understand. Thus, a problem will arise whenever a Sg quantifier will try to combine with collective predicate across an event closure. An intermediate $Q$ is inserted to ensure that Sg indeed outscopes event closure. Crucially, $Q$ must not commute with $\exists e$.\footnote{If my reading is correct, Schein confuses non-increasing quantifiers with quantifiers that commute with existentials. The example with \emph{every} to be given below shows an \emph{increasing} quantifier, that does not commute with existentials\ldots} Otherwise, we couldn't tell the precise location of the extra converting step and somebody could choose to package it in the meaning of the quantifier (as we initially did with \emph{few}).
+
 \ex
-\Tikzmark{beg}{Plural object $X$}\hspace{1.5ex} Qy,\hspace{1.5ex} $\exists e,$\hspace{1.5ex} $V(\Tikzmark{end}{X})(y)$\\
+\Tikzmark{beg}{Sg Quantifier $x$}\hspace{1.5ex} Qy,\hspace{1.5ex} $\exists e,$\hspace{1.5ex} $V(\Tikzmark{end}{Converting(x)(X)})(y)$\\
 \DrawArrow{beg}{end}{below}{\small binds} % [tikz options-]beginning-end-position-text[- distance to line]
 \xe
 %
-The problem is supposedly revealed in the following:
+The following examples illustrate the contrast between a Sg quantifier \emph{few congressmen} and a Pl quantifier \emph{four congressmen} (both marked in plural), using the general schema of \clastx
 
-\pex \textbf{Baseline 1:} \emph{few} can outscope event closure when the predicate is distributive
+\pex \textbf{Baseline 1:} \emph{few} can outscope event closure and \emph{every session} when the predicate is distributive
 \a Few congressmen attended every session
 \a \textbf{Reading:} most congress men missed some session or other (few $\gg$ every session $\gg$ $\exists e,$)
 \xe
 %
-\pex~ \textbf{Baseline 2:} Some plural quantifiers (i.e. those of class Pl) can outscope event closure when the predicate is collective
+\pex~ \textbf{Baseline 2:} Pl quantifiers can outscope event closure when the predicate is collective
 \a Four congressmen met every session
 \a \textbf{Reading:} some group of congressmen religiously convened on every session
 \xe
 %
-\pex \textbf{Target:} Some plural quantifiers (i.e. those of class Sg) \emph{cannot} outscope event closure when the predicate is collective
+\pex \textbf{Target:} Sg quantifiers \emph{cannot} outscope event closure when the predicate is collective
 \a Few congressmen met every session
 \a \textbf{Missing reading:} some group of congresspeople - which were few in number - religiously convened on every session. (?)\footnote{\quo{An illicit interpretation would combine a property of about the action of a plurality across events with semidistributivity}}
 \xe
 %
-\paragraph{Not Schein, me.} Does \emph{few} combine well with collective predicates? \emph{a few} seems to be better suited to that role.
-
-\pex
-\a 
-? Few congresspeople met.\\
-? Few congresspeople know each other.
-\a 
-A few congresspeople met.
-A few congresspeople know each other.
-\xe
-%
-This suggests that indeed, it should at so
 
 \subsection{No escape from thematic roles}
 
-The claim is that any argument to an event predicate must be the whole group of bearers of some thematic roles. Loosely speaking, a subject must be the whole set of agents. The argument is that if that weren't enforced, the meaning of \cnextx would be trivialized.
+The claim is that any argument to an event predicate must be the whole group of bearers of some thematic roles. For instance, a subject must be the whole set of agents. The argument is that if that weren't enforced, the meaning of \cnextx would be trivialized.
 
 \pex
 \a \textbf{Scenario:} \\
