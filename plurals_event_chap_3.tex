@@ -1,0 +1,158 @@
+%plurals_event_chap_34
+%PRECOMPILE COMMAND pdftex -ini -jobname="plurals_event_chap_34" "&pdflatex" mylatexformat.ltx plurals_event_chap_34.tex
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[sort]{natbib}
+\usepackage{stdprmbl}
+
+\usepackage{parskip}
+
+\lingset{interpartskip = -5pt}
+\lingset{aboveexskip = 3pt,belowexskip = 3pt}
+
+\newcommand{\ag}{\textsc{Agent}}
+\newcommand{\thm}{\textsc{Theme}}
+\newcommand{\goal}{\textsc{Goal}}
+%\endofdump
+
+\title{Plurals and events (chap. 3)}
+\author{Keny Chatain}
+
+\begin{document}
+\maketitle
+
+\section*{Intro}
+Schein makes two claims which together, will support Neo-Davidsonian separation:
+
+\begin{enumerate}
+\item There are no plural entities. Plurals must be handled using set and predicates.\\
+\emph{In particular, quantifiers must be sorted in singular quantifiers and plural quantifiers.}
+\item Natural language predicates only make reference to pluralities
+\end{enumerate}
+%
+Together, this claim are taken to mean that a natural language event predicate $V$ is equivalent to a separated formula\footnote{These are logical syntax formulas ; the syntax of the intermediate language of representation in indirect semantics}. 
+
+$$V(e, X_1, \ldots, X_n) \leftrightarrow V'(e) \wedge \left( \forall x, \Theta(x, e) \leftrightarrow x\in X_1\right) \ldots $$
+
+In other words, natural language predicates are separated in the \quo{logical syntax} (i.e. the syntax of the intermediate language of representation in indirect semantics)
+
+\section*{Claim I: singulars and plurals must be kept ontologically separate}
+
+\subsection{}
+
+
+The opposite view under-generates, it is claimed. The opposite view is that there is a single domain of both singularities and pluralities. To accommodate plurals, the semanticist needs to enrich the meaning of all denotations that depend on the domain of individuals $D_e$. This is feasible enough for predicates:
+
+\ex
+$x$ is true of $\exte{cluster}$ iff $x$ are clustered
+\xe
+%
+However, quantifiers raise a challenge. Let's look at \emph{few}. Intuitively, \emph{few} counts singularities, cf \cnextx{a}. Once plurals are included, we need to find a way to retrieve singularities that we can count. Schein's suggested solution is given in \cnextx{b}.
+
+\pex
+\a $\dbb{few}(P)(Q)$ true iff $\#P\cap Q$ is little (compared to $\#P$)
+\a $\dbb{few}(P)(Q)$ true iff $\#\left\lbrace x\ \middle|\ 
+\begin{array}{l}
+x\text{ is atomic}\\
+\exists y, x\prec_{part} y \wedge P(y)\\
+\exists y', x\prec_{part} y' \wedge Q(y') \wedge P(y')
+\end{array}
+\right\rbrace$ is little \label{few2}
+\xe
+%
+
+\paragraph{Why this is inadequate.} We hardwired \emph{few} to quantify over existentially over groups. However, this is inadequate because:
+
+\pex
+\a Few composers collaborated on less than 4 operas
+\a \textbf{\cnextx{a}'s problematic reading:} few  composers collaborated with someone else on less than 4 operas\\
+False if some composer never collaborated\footnote{And there are many composers}
+\a \textbf{\cnextx{a}'s actual reading (dubbed the \emph{semidistributive} reading):} few composers collaborated on less than 4 operas with anyone else\\ 
+In other words, many composers have more than 4 collaborations
+\xe
+%
+However, \clastx{b}, given the denotation in \cref{few2}, asks us to count the atomic $x$ who are part of a group $X$ which collaborated in less than 4 operas, i.e. the problematic reading. The solution seems to be to revise our assumptions about what the scope of \emph{few} means. Schein seems to assume \cnextx{a}, but it is probably akin to 
+
+\pex
+\a $\lambda X.$ the number of operas that $X$ together collaborated on is less than 4
+\a $\lambda x.$ the number of operas that $x$ collaborated with anyone else on is less than 4
+\xe
+%
+\clastx{b} is an available interpretation in singular sentences:
+
+\ex
+Hammerstein collaborated on less than 4 operas
+\xe
+%
+Schein seems to accept this, but says that this is only going in the sense of saying that \emph{few} quantifies over singularities - the exact claim he is trying to make.
+
+\paragraph{What goes wrong in general.} In Schein's view, there are two classes of quantifiers:
+
+\begin{itemize}
+\item \textbf{Class Sg:} quantifiers over singularities 
+\item \textbf{Class Pl:} quantifiers over pluralities
+\end{itemize}
+%
+In Schein's view, both can combine with collectives, but Sg quantifiers will need an extra converting step. This extra converting step (to be discussed in chap. 8) must take place below event closure, as far as I understand. Thus, a problem will arise whenever a Sg quantifier will try to combine with plural demanding expression across an event closure. An intermediate $Q$ is inserted to ensure that Sg indeed outscopes event closure. Crucially, $Q$ must not commute with $\exists e$\footnote{If my reading is correct, Schein confuses non-increasing quantifiers with quantifiers that commute with existentials. The example with \emph{every} to be given below shows an \emph{increasing} quantifier, that does not commute with existentials\ldots}
+\ex
+\Tikzmark{beg}{Plural object $X$}\hspace{1.5ex} Qy,\hspace{1.5ex} $\exists e,$\hspace{1.5ex} $V(\Tikzmark{end}{X})(y)$\\
+\DrawArrow{beg}{end}{below}{\small binds} % [tikz options-]beginning-end-position-text[- distance to line]
+\xe
+%
+The problem is supposedly revealed in the following:
+
+\pex \textbf{Baseline 1:} \emph{few} can outscope event closure when the predicate is distributive
+\a Few congressmen attended every session
+\a \textbf{Reading:} most congress men missed some session or other (few $\gg$ every session $\gg$ $\exists e,$)
+\xe
+%
+\pex~ \textbf{Baseline 2:} Some plural quantifiers (i.e. those of class Pl) can outscope event closure when the predicate is collective
+\a Four congressmen met every session
+\a \textbf{Reading:} some group of congressmen religiously convened on every session
+\xe
+%
+\pex \textbf{Target:} Some plural quantifiers (i.e. those of class Sg) \emph{cannot} outscope event closure when the predicate is collective
+\a Few congressmen met every session
+\a \textbf{Missing reading:} some group of congresspeople - which were few in number - religiously convened on every session. (?)\footnote{\quo{An illicit interpretation would combine a property of about the action of a plurality across events with semidistributivity}}
+\xe
+%
+\paragraph{Not Schein, me.} Does \emph{few} combine well with collective predicates? \emph{a few} seems to be better suited to that role.
+
+\pex
+\a 
+? Few congresspeople met.\\
+? Few congresspeople know each other.
+\a 
+A few congresspeople met.
+A few congresspeople know each other.
+\xe
+%
+This suggests that indeed, it should at so
+
+\subsection{No escape from thematic roles}
+
+The claim is that any argument to an event predicate must be the whole group of bearers of some thematic roles. Loosely speaking, a subject must be the whole set of agents. The argument is that if that weren't enforced, the meaning of \cnextx would be trivialized.
+
+\pex
+\a \textbf{Scenario:} \\
+Round 1: 18 marbles in 13 slots (first 10 slots have more than 15 marbles in them) \\
+Round 2: 10 marbles in 10 slots (= 1 per slot)
+\a Fewer than 15 marbles ever fall into exactly ten slots
+\a \textbf{Model truth-conditions:} \\
+for all events, such that some marbles $x$ fell into exactly 10 slots $\text{fall}(e, x, y)$,
+fewer than 15 marbles are such that for some slots, $\text{fall}(e, x, y)$
+\xe
+%
+\clastx{b} is true in \clastx{a}. \clastx{c} will also be true but only if $\text{fall}(e, x, y)$ is assumed to not be true of the marbles that fell in the first ten slots. In other words, $\text{fall}(e, x, y)$ is only true of $x$ if $x$ is the whole experiencer of the falling.
+
+\begin{boxy}{Assumptions}
+\begin{enumerate}
+\item Round 1 constitute one indecomposable event
+\item The predicted TCs are as stated
+\end{enumerate}
+\end{boxy}
+%
+The first assumption is anything but clear. 
+
+\end{document}
