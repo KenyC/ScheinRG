@@ -26,7 +26,7 @@
 Schein attempts to show that the truth-condition of sentences like \cnextx{a} are unavailable if we assume that \quo{teach} denotes a 4-ary predicate (3 arguments of the verb + event)\footnote{Schein uses \emph{indirect} semantics, where a sentence first gets translated into a formula of some logical language, which itself receives a model-theoretic representation. I rephrase in terms of the more familiar \emph{direct} semantics of Heim and Kratzer, where sentences immediately translates to model-theoretic objects.}
 
 \pex
-\a Three video games taught every quarterback exactly two new plays. \label{quat}
+\a Three video games taught the two quarterbacks exactly two new plays each. \label{quat}
 \a \textbf{Observed truth-conditions:}\\
 Every quarterback learned two new plays\\
 They received instruction from three video-games.
@@ -45,7 +45,7 @@ An argument of impossibility is tricky to make: one needs to make sure that the 
 Before spelling out these assumptions, Schein seems to worry about a \quo{van Benthem problem} that obtains with modified numerals and events. 
 The effect of \emph{exactly} may be nullified by focusing on specific sub-events. \cnextx is a simplified version of the problem. For instance, in $e'$, it is true that I read exactly two books while overall, I in fact read 3 books.
 
-\cnextx{a} is a simpler instance of the problem that worries Schein ; in a characteristic manner, Schein chooses to illlustrate the problem with the complicated sentence in \cref{quat}
+\cnextx{a} is a simpler instance of the problem that worries Schein ; in a characteristic manner, Schein chooses to illustrate the problem with the complicated sentence in \cref{quat}
 
 \pex
 \a I read exactly two books.
@@ -79,7 +79,7 @@ But Schein decides against these two ways of doing things
 %
 He prefers the following route which does the same thing that \emph{same} does with only material \quo{within the fragment that we are holding polyadic logical form responsible to}.
 
-\section{Composition: quantifiers \& scope}
+\section{Playing with composition: quantifiers \& scope}
 
 The truth conditions for \cref{quat} that we aim for should be true in the following scenario:
 
@@ -115,10 +115,10 @@ First off, the truth-conditions seem to imply that \emph{exactly two new plays} 
 every quarterback $\gg$ two new plays
 \end{center}
 %
-Since there are two new plays \emph{per} quarterbacks, this imply, within Schein's view, that \emph{every} quantifies over singularities. The truth-conditions that the composition must give us will look as follows (unknowns in red, upper case variables range over pluralities, exactly 2 is left unanalysed):
+Since there are two new plays \emph{per} quarterbacks, this implies, according to Schein, that \emph{every} quantifies over singularities. The truth-conditions that the composition must give us will look as follows (unknowns in red, upper case variables range over pluralities, exactly 2 is left unanalysed):
 
 \ex
-$\text{\color{red} (three video games?)} \ldots \forall y\in \dbb{quarterback}, \text{Exactly 2 } Z\in \dbb{plays},  \dbb{give}({\color{red} ?})(y)({\color{red} ?})(e)$
+$\text{\color{red} (three video games?)} \ldots \forall y\in \dbb{quarterback}, \text{Exactly 2 } Z\in \dbb{plays},  \dbb{teach}({\color{red} ?})(y)({\color{red} ?})(e)$
 \xe
 %
 Initially, Schein asks us to disregard the scope of the event closure (essentially closing it very locally). That being out of the way,
@@ -127,7 +127,7 @@ the real puzzle is \emph{three video-games}. Is it interpreted distributively, a
 \paragraph{Option I: plural interpretation} The simplest option is to interpreted \emph{three video games} and \emph{exactly two new plays} as plural. This gives the following LF:
 
 \ex\label{lf1}
-$\exists X\in \dbb{video-games}, |X| = 3 \wedge \forall y\in \dbb{quarterback}, \underline{\text{Exactly 2 } Z\in \dbb{plays},  \dbb{give}(X)(y)(Z)(e)}$
+$\exists X\in \dbb{video-games}, |X| = 3 \wedge \forall y\in \dbb{quarterback}, \underline{\text{Exactly 2 } Z\in \dbb{plays},  \dbb{teach}(X)(y)(Z)(e)}$
 \xe
 %
 Breaking down the evaluation of \clastx in manageable pieces, we first need to know of which $X$ and $y$ the underlined part is true. In other words, for each quarterback, we need to know which video-games taught him exactly two new plays. Schein provides the following answer:
@@ -139,16 +139,98 @@ Breaking down the evaluation of \clastx in manageable pieces, we first need to k
 %
 One wonders why this is so. Couldn't we say that all three video-games taught \emph{quarterback 2} exactly two new plays? Sure, video-game 1 didn't contribute much to that but, as a group, they sure taught that quarterback two new plays.
 
-Schein brushes off this team credit concern by pointing out that video-games are inanimate and need not have any particular link to each other to be true\footnote{Using the word \emph{team credit} kind of imposes restrictions on what we think the phenomenon is. Within that mindset, Schein's reply is valid. But if team credit is nothing but a special case of a more general mechanism of non-maximality, then it fails to adress the bigger question: could we get the three video-games to teach teach \emph{qurterback 2} exactly two new plays if we allow for non-maximality?}. If we accept his rebuttal, then \cref{lf1} indeed comes out as false, contrary to fact: there is no plurality $X$ that is related to every quarterback $y$ by two new plays.
+Schein brushes off this team credit concern by pointing out that video-games are inanimate and need not have any particular link to each other to be true\footnotemark{}. If we accept his rebuttal, then \cref{lf1} indeed comes out as false, contrary to fact: there is no plurality $X$ that is related to every quarterback $y$ by two new plays.
+\footnotetext{The word \emph{team credit} presupposes that non-maximality should only ever occur with teams. If this is correct, Schein's reply is valid. But if team credit is nothing but a special case of a more general mechanism of non-maximality, then it fails to address the bigger question: could we get the three video-games to teach teach \emph{qurterback 2} exactly two new plays if we allow for non-maximality?}
 
-In a nutshell, this LF requires the same set of video-games to have taught every quarterback. Schein brushes off other possible interpretations and notes that the correct truth-conditions can be paraphrased as follows:
+In a nutshell, this LF requires the same set of video-games to have taught every quarterback. Schein says similar things about other possible interpretations and notes that the correct truth-conditions can be paraphrased as follows:
 
-\ex%
+\ex{}%
 [each quarterback was \underline{taught} two new plays] and [the \underline{teachers} were three video-games]
 \xe
 %
 This paraphrase can only be obtained if we have at least two operators in our LF, each encoding one of the two red predicates. This means some form of separation.
 
 
-\paragraph{Option II: branching quantifiers}
+\paragraph{Option II: branching quantifiers} Schein considers the possibility that \quo{three video-games} and \quo{every quarterback} could somehow form a binary quantifier. Barwise (1979) gives an overview of how we can make sense of such a notion. However, Schein seems to use a different home-brewed version of this notion. After a lot of extracting and restating, here is what I think is meant\footnote{Using modern terminology. The restatement is not 100\% accurate, as it seems Schein's formulation allows for different covers to be picked in the two conjuncts of the cumulative statements. I gloss over that detail as it allows a more conspicuous statement.}\textsuperscript{,}\footnote{Given the restatement, binary quantifiers are a red herring. Binary quantifiers are a way to create logical formulas where neither quantifier scope above the other. This is not so here. Rather, most of the work of binary quantfiers is to change what relation $R$ is fed to the quantifiers. We could restate this section using unary quantifiers and \emph{Cov} operator}:
+
+\pex
+\a 
+If $Q$ and $Q'$ are two quantifiers,\\
+$Q\times Q' = \lambda R_{eet}.\  Q X,\ Q' Y,\
+R^{\text{Cov}_x,\text{Cov}_y}(X)(Y)
+$
+\a Given a set of covers Cov\textsubscript{X} and Cov\textsubscript{Y} of $X$ and $Y$ resp., \\
+$R(X)(Y)$ is true \\
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lll}%{\textwidth}{p{0.6cm}XX}
+iff& $\exists \text{cov}_X\in \text{Cov}_{X}, \exists \text{cov}_Y\in \text{Cov}_{Y},$& \emph{there are some covers drawn from the two sets}\\
+&$\forall X'\in \text{cov}_{X}, \exists Y'\in \text{cov}_{Y}, R(X')(Y')$&\\
+&$\forall Y'\in \text{cov}_{Y}, \exists X'\in \text{cov}_{X}, R(X')(Y')$&\\
+
+\end{tabular}
+\a \textbf{Convention:} $Q\times Q' (x,y),\ \ldots x \ldots y \ldots$ is to be read as $Q\times Q'\left( \lambda x. \lambda y.\ \ldots x \ldots y \ldots\right) $ 
+\xe
+%
+In our particular example, we want to create the binary quantifier \quo{three video-games $\times$ the two quarterbacks}. To enforce that in this binary quantifier, \emph{the two quarterbacks} quantifies over singularities, we impose that Cov\textsubscript{Y} contain only the atomic cover. The binary quantifier has then this shape
+
+\ex
+$\dbb{3 video games}\times \dbb{the two quarterbacks} = \lambda R_{eet}.\  \exists X,\ X\text{ are 3 video-games},\
+R^{\text{Cov}_x,\left\lbrace \text{At}\right\rbrace}(X)(\text{qb1}\oplus\text{qb2})
+$
+\xe
+%
+With this binary quantifier, we may rewrite the LF as follows:
+
+\ex
+$\dbb{3 video games}\times \dbb{the two quarterbacks} (X, y), \underline{\text{Exactly 2 } Z\in \dbb{plays},  \dbb{teach}(X)(y)(Z)(e)}$
+\xe
+%
+We have already established that the relation $R$ between $X$ and $y$ underlined in \clastx  is true of the following pairs: $(qb_1, vg_1)$ and $(qb_1, vg_2\oplus vg_3)$. The cumulativity built in the binary quantifier will effectively add the sum pair to the relation before feeding it to the quantifier:
+
+\ex
+$R^{\text{Cov}_x,\text{Cov}_y} = \left\lbrace (qb_1, vg_1),(qb_1, vg_1\oplus vg_2), {\color{red}(qb_1 \oplus qb_2, vg_1\oplus vg_2\oplus vg_3)}\right\rbrace$
+\xe
+%
+The red pair makes true both quantifiers. Hence, the sentence is correctly predicted to be true!
+
+However, Schein believes the truth conditions yielded by the binary quantifier are too weak. To show that, he adds yet another quantifier to the sentence:
+
+\pex
+\a Three video games taught the two quarterbacks exactly two new plays each \underline{on a big monitor}. 
+\a \textbf{Reading:}\\
+Every quarterback was taught exactly two new plays.\\
+Every quarterback got taught on a (possibly different) big monitor.\\
+The teachers were three video-games.
+\xe
+%
+ As far as I understand, we don't really need the video games and the two quarterbacks to make the point. The much simpler sentence below has
+
+\pex
+\a This video-game teaches exactly two new plays on a big monitor
+\a \textbf{Reading:}\\
+Only two plays were taught by this video-games\\
+They were taught on a big monitor
+\xe
+%
+Schein doesn't comment much on this reading but it is quite interesting. On the one hand, it implies that one same big monitor was used for both new plays. This suggests that \textsf{$\exists$ $\gg$ exactly two new plays}. However, spelling this in terms of a formula doesn't yield quite the right reading:
+
+\ex
+  $\exists y\in\dbb{big monitor},$ \textsf{Exactly 2 new plays} $Z$, $\dbb{teach}(\text{vg}_{1}, y, Z, e)$
+ \xe
+ %
+This would seem to allow for this video-game to teach more than two plays, simply because the extra plays are not taught on a big monitor (as in \cnextx). Here, binary quantifiers are of no service: \emph{a big monitor} is a singular quantifier, covers are vacuous. If separation of the polyadic predicate were possible however, this reading can be adequately captured, because \emph{a big monitor} and \emph{exactly two new plays} may scope over different conjuncts:
+
+\ex
+\textsf{Exactly 2 new plays} $Z$, $\dbb{teach}(e)(Z)(\text{vg}_{1})$\\
+$\wedge$ $\exists y\in\dbb{big monitor},$ $\dbb{on}(e)(y)$
+\xe
+%
+
+
+
+\section{Playing with the meaning of the polyadic predicate}
+Having exhausted the resources of his compositional creativity, Schein considers what would happen if we changed the denotation of $\dbb{teach}$. Here, we have one constraint
+
+
+
 \end{document}
