@@ -1,0 +1,41 @@
+\begin{tikzpicture}[scale = \scale]
+\node (v1) at (2.5,1.5) {video-game 1};
+\node (v2) at (-0.5,2.5) {play 1};
+\node (v4) at (-0.5,0.5) {play 2};
+
+
+\node (v13) at (2.5,-4) {video-game 3};
+\node (v12) at (-0.5,-4) {play 5};
+\node (v11) at (2.5,-5.5) {video-game 3};
+\node (v10) at (-0.5,-5.5) {play 6};
+
+\node (v5) at (2.5,-1) {video-game 2};
+\node (v6) at (-0.5,-1) {play 3};
+\node (v7) at (2.5,-2.5) {video-game 2};
+\node (v8) at (-0.5,-2.5) {play 4};
+
+\node (v3) at (-4,1.5) {quarterback 2};
+\node (v9) at (-4,-3.5) {quarterback 1};
+
+\draw [line width = 1pt] (v1) edge (v2);
+\draw [line width = 1pt] (v2) edge (v3);
+\draw [line width = 1pt] (v1) edge (v4);
+\draw [line width = 1pt] (v4) edge (v3);
+\draw [line width = 1pt] (v5) edge (v6);
+\draw [line width = 1pt] (v7) edge (v8);
+\draw [line width = 1pt] (v8) edge (v9);
+\draw [line width = 1pt] (v6) edge (v9);
+
+\draw [line width = 1pt] (v9) edge (v10);
+\draw [line width = 1pt] (v9) edge (v12);
+\draw [line width = 1pt] (v10) edge (v11);
+\draw [line width = 1pt] (v12) edge (v13);
+\draw [dotted, line width = 1pt](-5.5,-3.5) .. controls (-5.5,-4.5) and (2,-3.5) .. (3.5,-3) .. controls (4,-2.5) and (4.5,-1.5) .. (4,-1) .. controls (1,1) and (-5.5,-2) .. (-5.5,-3.5);
+\draw [dotted, line width = 1pt](-5.5,1.5) .. controls (-5.5,2.5) and (-2.5,3) .. (-0.5,3) .. controls (1.5,3) and (3.5,2.5) .. (3.5,1.5) .. controls (3.5,0.5) and (1,0) .. (-0.5,0) .. controls (-2,0) and (-5.5,0.5) .. (-5.5,1.5);
+
+
+\draw [dotted, line width = 1pt](4,-5) .. controls (4,-6) and (4,-6.5) .. (2.5,-6.5) .. controls (0.5,-6.5) and (-6,-4.5) .. (-6,-3.5) .. controls (-6,-3) and (-4.5,-3) .. (-4,-3) .. controls (-3.5,-3) and (0.5,-3.5) .. (2.5,-3.5) .. controls (3,-3.5) and (4,-3.5) .. (4,-5);
+\node at (4,1.5) {$e_1$};
+\node at (4.5,-1.5) {$e_2$};
+\node at (4.5,-5.5) {$e_3$};
+\end{tikzpicture}

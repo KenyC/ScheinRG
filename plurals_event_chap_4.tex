@@ -1,19 +1,21 @@
-%plurals_event_chap_34
-%PRECOMPILE COMMAND pdftex -ini -jobname="plurals_event_chap_34" "&pdflatex" mylatexformat.ltx plurals_event_chap_34.tex
-\documentclass[english]{article}
-\usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
-\usepackage[sort]{natbib}
-\usepackage{stdprmbl}
+%&plurals_event_chap_34
+% %PRECOMPILE COMMAND pdftex -ini -jobname="plurals_event_chap_34" "&pdflatex" mylatexformat.ltx plurals_event_chap_34.tex
+% \documentclass[english]{article}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+% \usepackage[sort]{natbib}
+% \usepackage{stdprmbl}
 
-\usepackage{parskip}
+% \usepackage{parskip}
 
-\lingset{interpartskip = -5pt}
-\lingset{aboveexskip = 3pt,belowexskip = 3pt}
+% \lingset{interpartskip = -5pt}
+% \lingset{aboveexskip = 3pt,belowexskip = 3pt}
+
+\endofdump
 
 \definecolor{darkred}{rgb}{0.4,0,0}
 
-
+\newcommand{\scale}1
 
 \title{Plurals and events (chap. 4) : Essential Separation}
 \author{Keny Chatain}
@@ -23,7 +25,7 @@
 
 \section*{Structure of the argument}
 
-Schein attempts to show that the truth-condition of sentences like \cnextx{a} are unavailable if we assume that \quo{teach} denotes a 4-ary predicate (3 arguments of the verb + event)\footnote{Schein uses \emph{indirect} semantics, where a sentence first gets translated into a formula of some logical language, which itself receives a model-theoretic representation. I rephrase in terms of the more familiar \emph{direct} semantics of Heim and Kratzer, where sentences immediately translates to model-theoretic objects.}
+Schein attempts to show that the truth-condition of sentences like \cnextx[a] are unavailable if we assume that \quo{teach} denotes a 4-ary predicate (3 arguments of the verb + event)\footnote{Schein uses \emph{indirect} semantics, where a sentence first gets translated into a formula of some logical language, which itself receives a model-theoretic representation. I rephrase in terms of the more familiar \emph{direct} semantics of Heim and Kratzer, where sentences immediately translates to model-theoretic objects.}
 
 \pex
 \a Three video games taught the two quarterbacks exactly two new plays each. \label{quat}
@@ -41,43 +43,43 @@ An argument of impossibility is tricky to make: one needs to make sure that the 
 \end{enumerate}
 %
 
-\section{Preliminary confusions}
-Before spelling out these assumptions, Schein seems to worry about a \quo{van Benthem problem} that obtains with modified numerals and events. 
-The effect of \emph{exactly} may be nullified by focusing on specific sub-events. \cnextx is a simplified version of the problem. For instance, in $e'$, it is true that I read exactly two books while overall, I in fact read 3 books.
+% \section{Preliminary confusions}
+% Before spelling out these assumptions, Schein seems to worry about a \quo{van Benthem problem} that obtains with modified numerals and events. 
+% The effect of \emph{exactly} may be nullified by focusing on specific sub-events. \cnextx is a simplified version of the problem. For instance, in $e'$, it is true that I read exactly two books while overall, I in fact read 3 books.
 
-\cnextx{a} is a simpler instance of the problem that worries Schein ; in a characteristic manner, Schein chooses to illustrate the problem with the complicated sentence in \cref{quat}
+% \cnextx[a] is a simpler instance of the problem that worries Schein ; in a characteristic manner, Schein chooses to illustrate the problem with the complicated sentence in \cref{quat}
 
-\pex
-\a I read exactly two books.
-\a 
-\begin{tikzpicture}
-\draw [rounded corners = 20pt] (-2.5,0.5) rectangle (1.5,-2);
-\draw [rounded corners = 20pt] (-2,-0.5) rectangle (1,-2);
-\node at (1.5,0.5) {e};
-\node at (1,-0.5) {e'};
-\node at (-0.5,0) {I read book 1};
-\node at (-0.5,-1) {I read book 2};
-\node at (-0.5,-1.5) {I read book 3};
-\end{tikzpicture}
-\xe
-%
-Schein seems to consider the \quo{van Benthem} reading to be available. He wants a way to force readers to interpret the sentence within the big event $e$. He considers three ways to achieve this:
+% \pex
+% \a I read exactly two books.
+% \a 
+% \begin{tikzpicture}
+% \draw [rounded corners = 20pt] (-2.5,0.5) rectangle (1.5,-2);
+% \draw [rounded corners = 20pt] (-2,-0.5) rectangle (1,-2);
+% \node at (1.5,0.5) {e};
+% \node at (1,-0.5) {e'};
+% \node at (-0.5,0) {I read book 1};
+% \node at (-0.5,-1) {I read book 2};
+% \node at (-0.5,-1.5) {I read book 3};
+% \end{tikzpicture}
+% \xe
+% %
+% Schein seems to consider the \quo{van Benthem} reading to be available. He wants a way to force readers to interpret the sentence within the big event $e$. He considers three ways to achieve this:
 
-\pex
-\a I read exactly two books in exactly 24 hours. \hfill (adverbial modifier)
-\a I read exactly two books with the same title. \hfill (enriching descriptive content)
-\xe
-%
-If $e'$ takes less than 24 hours and $e$ exactly 24 hours, then \clastx{a} can't possibly be talking about $e'$.
+% \pex
+% \a I read exactly two books in exactly 24 hours. \hfill (adverbial modifier)
+% \a I read exactly two books with the same title. \hfill (enriching descriptive content)
+% \xe
+% %
+% If $e'$ takes less than 24 hours and $e$ exactly 24 hours, then \clastx{a} can't possibly be talking about $e'$.
 
-But Schein decides against these two ways of doing things
+% But Schein decides against these two ways of doing things
 
-\begin{itemize}
-\item Temporal adverbials because \quo{[they], one is prepared to concede, involve [quantification over] events in some crucial way}
-\item \emph{same} because \quo{[they] hold mysteries of their own}
-\end{itemize}
-%
-He prefers the following route which does the same thing that \emph{same} does with only material \quo{within the fragment that we are holding polyadic logical form responsible to}.
+% \begin{itemize}
+% \item Temporal adverbials because \quo{[they], one is prepared to concede, involve [quantification over] events in some crucial way}
+% \item \emph{same} because \quo{[they] hold mysteries of their own}
+% \end{itemize}
+% %
+% He prefers the following route which does the same thing that \emph{same} does with only material \quo{within the fragment that we are holding polyadic logical form responsible to}.
 
 \section{Playing with composition: quantifiers \& scope}
 
@@ -196,7 +198,7 @@ The red pair makes true both quantifiers. Hence, the sentence is correctly predi
 However, Schein believes the truth conditions yielded by the binary quantifier are too weak. To show that, he adds yet another quantifier to the sentence:
 
 \pex
-\a Three video games taught the two quarterbacks exactly two new plays each \underline{on a big monitor}. 
+\a Three video games taught the two quarterbacks exactly two new plays each \underline{on a big monitor}.  \label{long_big_monitor}
 \a \textbf{Reading:}\\
 Every quarterback was taught exactly two new plays.\\
 Every quarterback got taught on a (possibly different) big monitor.\\
@@ -206,7 +208,7 @@ The teachers were three video-games.
  As far as I understand, we don't really need the video games and the two quarterbacks to make the point. The much simpler sentence below has
 
 \pex
-\a This video-game teaches exactly two new plays on a big monitor
+\a This video-game teaches exactly two new plays on a big monitor. \label{big_monitor}
 \a \textbf{Reading:}\\
 Only two plays were taught by this video-games\\
 They were taught on a big monitor
@@ -218,7 +220,7 @@ Schein doesn't comment much on this reading but it is quite interesting. On the 
   $\exists y\in\dbb{big monitor},$ \textsf{Exactly 2 new plays} $Z$, $\dbb{teach}(\text{vg}_{1}, y, Z, e)$
  \xe
  %
-This would seem to allow for this video-game to teach more than two plays, simply because the extra plays are not taught on a big monitor (as in \cnextx). Here, binary quantifiers are of no service: \emph{a big monitor} is a singular quantifier, covers are vacuous. If separation of the polyadic predicate were possible however, this reading can be adequately captured, because \emph{a big monitor} and \emph{exactly two new plays} may scope over different conjuncts:
+This would seem to allow for this video-game to teach more than two plays, simply because the extra plays are not taught on a big monitor. Here, binary quantifiers are of no service: \emph{a big monitor} is a singular quantifier, covers are vacuous. If separation of the polyadic predicate were possible however, this reading can be adequately captured, because \emph{a big monitor} and \emph{exactly two new plays} may scope over different conjuncts:
 
 \ex
 \textsf{Exactly 2 new plays} $Z$, $\dbb{teach}(e)(Z)(\text{vg}_{1})$\\
@@ -226,11 +228,166 @@ $\wedge$ $\exists y\in\dbb{big monitor},$ $\dbb{on}(e)(y)$
 \xe
 %
 
+\section{What about the event quantifier? What about other denotations of \emph{every}?}
+If I am right that the main problem of \cref{long_big_monitor} is really all about the last two quantifiers, then much of the rest of the chapter is irrelevant. Indeed, Schein attempts several solutions that all meddle with the first two quantifiers. For sake of having an exhaustive review, I will present these arguments nonetheless.
 
 
-\section{Playing with the meaning of the polyadic predicate}
-Having exhausted the resources of his compositional creativity, Schein considers what would happen if we changed the denotation of $\dbb{teach}$. Here, we have one constraint
+Never running out of compositional creativity, Schein discusses two refinements to our logical translations:
+
+\begin{enumerate}
+\item 
+Placement of event closure
+
+\item 
+Denotation of teach
+\end{enumerate}
+
+\paragraph{Denotation of $\dbb{teach}$} Here, we have one constraint: the predicate denoted by \emph{teach} must \quo{express a true relation}. By that, he means that $\dbb{teach}(X)(y)(Z)(e)$ is true then Z must teach Y to X (at $e$)\footnote{The use of the locution \quo{at $e$} suggests that Schein uses events the way people use situations ; they are simply bundle of facts. If left unconstrained, it may be become hard to define thematic role heads in this view.}. So far, we've been assuming the weakest meaning  compatible with this requirement, i.e. \cnextx. 
 
 
+\pex
+\a \textbf{Inexhaustive}\\
+$\dbb{teach}(X)(y)(Z)(e)$ iff Z teaches y to X (at $e$)
+\a 
+\xe
+%
+But we could impose further requirement:
+
+\pex \textbf{S/IO-Exhaustive}
+\a 
+$\dbb{teach}(X)(y)(Z)(e)$ iff Z teaches y to X (at $e$)\\
+$\forall Z', X', Y'$ Z' teaches Y' to X' (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$\\
+\a 
+The only teachers of the event are $Z$
+The only taught of the event are $X$
+\xe
+%
+
+\pex \textbf{S/IO-Exhaustive relative to direct object}
+\a 
+$\dbb{teach}(X)(y)(Z)(e)$ iff Z teaches y to X (at $e$)\\
+$\forall Z', X'$ Z' teaches y to X' (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$\\
+\a 
+X is everything taught $y$\\
+Z is everything teaching $y$\\
+\xe
+%
+\pex \textbf{Fully exhaustive}
+\a 
+$\dbb{teach}(X)(y)(Z)(e)$ iff Z teaches y to X (at $e$)\\
+$\forall Z', X', Y'$ Z' teaches Y' to X' (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$ and $Y'=Y$\\
+\a 
+X is everything taught $y$\\
+Z is everything teaching $y$\\
+\xe
+%
+I am uncertain why Schein chooses these particular denotations. This seems to rely on the argument from chapter 3 that at least \emph{plural} arguments must be read exhaustively. Given that we now have one more argument (i.e. the monitor), we need to further refine these denotations:
+
+\pex \textbf{S/IO-Exhaustive}
+\a 
+$\dbb{teach}(X)(y)(Z)(W)(e)$ iff Z teaches y to X on W (at $e$)\\
+$\forall Z', X', Y', W'$ $Z'$ teaches $Y'$ to $X'$ on $W'$ (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$\\
+\a 
+The only teachers of the event are $Z$
+The only taught of the event are $X$
+\xe
+%
+
+\pex \textbf{S/IO-Exhaustive relative to direct object and adjunct}
+\a 
+$\dbb{teach}(X)(y)(Z)(W)(e)$ iff Z teaches y to X on W (at $e$)\\
+$\forall Z', X'$ $Z'$ teaches y to $X'$ on $W$ (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$\\
+\a 
+X is everything taught $y$\\
+Z is everything teaching $y$\\
+\xe
+%
+\pex \textbf{Fully exhaustive}
+\a 
+$\dbb{teach}(X)(y)(Z)(W)(e)$ iff Z teaches y to X on W (at $e$)\\
+$\forall Z', X', Y', W'$ $Z'$ teaches $Y'$ to $X'$ on $W'$ (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$ and $Y'=Y$ and $W' = W$\\
+\a 
+The event contains $X$ teaches $y$ to $Z$ on $W$ and nothing else
+\xe
+%
+
+
+Note: As argued in Kratzer, there are intermediate position between complete separation and completely polyadic formulas. One could imagine adjuncts are separate, while arugments belong to the polyadic predicate.
+
+\paragraph{Position of event closure.} Four placements are considered: widest scope, intermediate scope, lowest scope and within the binary quantifier. For reasons that are never explicitly commented on, Schein only considers one placement within the binary quantifier.
+
+\ex
+($\exists e$) \ldots three video-games $\times$ [the two quarterbacks $(\exists e),$] \ldots ($\exists e,$) \ldots exactly two new plays on a big monitor \ldots ($\exists e$)
+\xe
+%
+As a general remark, Champollion notes in a ESSLLI hand-out that a ven Benthem problem will arise every time a quantifier takes scope under event closure. I think some of the comments below fall within the scope of this general remark
+
+\subsection{Testing the combinations}
+\paragraph{First case: intermediate scope} Here, we get to choose for each (quarterback $\times$ video-game) pair which $e$ to evaluate \quo{exactly two new plays} and \quo{a big monitor} in. Exploiting the van Benthem vulnerability, we choose events that are just big enough to contain exactly two new plays, essentially nullifying the effect \emph{exactly two}. So in a scenario where some quarterback was taught 4 plays, we pick two events small that split the four events in two sets of two. Since \quo{exactly 2} will be satisfied in each event, the sentence is predicted true when it is false.
+
+
+\ex \label{cutoff}
+\renewcommand{\scale}{0.75}
+\input{tikz/chap4_1.tex}
+\xe
+%
+
+
+\paragraph{Second case: widest scope+full or S/IO exhaustivity.} Because event closure has widest scope, exhaustivity will enforce that there is only one agent for all teachings. In other words, the same group of video-games taught every quarterback. This is quite independent from any quantification we may come up with so binary or unary quantification makes no difference.
+
+\ex
+$\exists e$ \ldots three video-games $\times$ [the two quarterbacks] \ldots  \ldots exactly two new plays on a big monitor \ldots ()
+
+\xe
+%
+
+
+\paragraph{Third case: widest-scope + S/IO exhaustivity relative to direct object} This exhaustivity requirement is less stringent. The event may contain different groups of teachers so long as per quarterback and monitor, there is only one group of teachers. That prevents truth-conditions too strong as above. But it does not rid us of the problem one quarterback may be taught four plays, so long as they were taught on two monitors, as in \cref{cutoff}.
+
+\textbf{Note:} Schein conspicuously ignores one version that would get us out of trouble. \cnextx require exhaustivity per object. So that there could only be one monitor per player
+
+\pex \textbf{S/IO-Exhaustive relative to direct object \emph{only}}
+\a 
+$\dbb{teach}(X)(y)(Z)(W)(e)$ iff Z teaches y to X on W (at $e$)\\
+$\forall Z', X', W'$ $Z'$ teaches y to $X'$ on $W$ (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$ and $W'=W$\\
+\a 
+X is everything that is taught to $y$\\
+Z is everything teaching $y$\\
+W is all the supports on which $y$ is taught
+\xe
+%
+In other words, we would predict the right truth-conditions if the event picked up by the highest quantifier is $e_1$ in the figure below ; since this is the event that Schein makes all his reasoning about, this is an important omission. Of course, this will not get us out of trouble since there is a way to satisfy the event description with $e_2$ instead.
+
+\ex
+\renewcommand{\scale}{0.75}
+\input{tikz/chap4_2.tex}
+\xe
+%
+
+
+\paragraph{Fourth case: binary quantifier over events} As discussed above, Schein's binary quantifiers is not really one. However, $\exists e$ is treated in a way that seems standard. In order to not get in the weeds of binary quantification, we may effectively treat the effect of that move as introducing a Skolem choice function, which picks out for each quarterback one event, but the event does not vary with the video games:
+
+\ex
+$\exists f_{\exte{quarterback}\rightarrow v}\dbb{3 video games}\times \dbb{the two quarterbacks} (X, y),$\\
+$\text{Exactly 2 } Z\in \dbb{plays},  \dbb{teach}(X)(y)(Z)({\color{darkred} f(y)})$
+\xe
+%
+
+\section{What next?}
+
+In the last part of the chapter, Schein considers what would happen if we were to maintain polyadicity but accept the existence of thematic role in the meta-language of our formulas:
+
+\ex
+$\dbb{teach}(X)(y)(Z)(e)=$true iff $\textsc{Agent}(e) = X \wedge \textsc{Theme}(e) = y \wedge \textsc{Goal}(e) = z\wedge e\text{ is a teaching}  $
+\xe
+%
+However, it is unclear that this is any different from full exhaustivity. Pulling a last ace from his sleeve, Schein mentions a trick that would have been useful in dealing with the problematically strong reading of full exhaustivity earlier: what if we inserted talk of sub-events quantifiers in the LF?
+
+
+\ex
+$\exists e,$ $\dbb{three video-games}$ \ldots $\dbb{two quarterbacks}$ \ldots $\dbb{exactly two new plays}$ \ldots $\exists e'\prec e,$ 
+\xe
+%
+If events may be summed up arbitrarily, then this formula is equivalent to a low existential and will not be of any help.
 
 \end{document}

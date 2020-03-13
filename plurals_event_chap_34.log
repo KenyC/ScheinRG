@@ -1,0 +1,1427 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.4)  12 MAR 2020 07:26
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&pdflatex mylatexformat.ltx tmp.tex
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/mylatexformat/mylatexformat.ltx
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25>) (./tmp.tex
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count175
+)
+(/home/keny/.TinyTeX/texmf-home/tex/latex/local/stdprmbl.sty
+Package: stdprmbl 2017/01/31 Keny's standard preamble
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box45
+\UL@hyphenbox=\box46
+\UL@skip=\skip51
+\UL@hook=\toks17
+\UL@height=\dimen135
+\UL@pe=\count176
+\UL@pixel=\dimen136
+\ULC@box=\box47
+Package: ulem 2019/11/18
+\ULdepth=\dimen137
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box48
+\shadowsize=\dimen138
+\@Sbox=\box49
+\do@VerbBox=\toks18
+\the@fancyput=\toks19
+\this@fancyput=\toks20
+\EndVerbatimTokens=\toks21
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) (/home/keny/.TinyTeX/texmf-dist/tex/latex/bussproofs/bussproofs.sty
+Proof Tree (bussproofs) style macros. Version 1.1.
+\theLevel=\count177
+\myMaxLevel=\count178
+\myBoxA=\box50
+\myBoxB=\box51
+\myBoxC=\box52
+\myBoxD=\box53
+\myBoxLL=\box54
+\myBoxRL=\box55
+\thisAboveSkip=\dimen139
+\thisBelowSkip=\dimen140
+\newScoreStart=\dimen141
+\newScoreEnd=\dimen142
+\newCenter=\dimen143
+\displace=\dimen144
+\leftLowerAmt=\dimen145
+\rightLowerAmt=\dimen146
+\scoreHeight=\dimen147
+\scoreDepth=\dimen148
+\htLbox=\dimen149
+\htRbox=\dimen150
+\htRRbox=\dimen151
+\htRRRbox=\dimen152
+\htAbox=\dimen153
+\htCbox=\dimen154
+) (/home/keny/.TinyTeX/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count179
+\calc@Bcount=\count180
+\calc@Adimen=\dimen155
+\calc@Bdimen=\dimen156
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count181
+\calc@Cskip=\skip54
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen157
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen158
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count182
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count183
+\leftroot@=\count184
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count185
+\DOTSCASE@=\count186
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+\big@size=\dimen159
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count187
+\c@MaxMatrixCols=\count188
+\dotsspace@=\muskip16
+\c@parentequation=\count189
+\dspbrk@lvl=\count190
+\tag@help=\toks24
+\row@=\count191
+\column@=\count192
+\maxfields@=\count193
+\andhelp@=\toks25
+\eqnshift@=\dimen160
+\alignsep@=\dimen161
+\tagshift@=\dimen162
+\tagwidth@=\dimen163
+\totwidth@=\dimen164
+\lineht@=\dimen165
+\@envbody=\toks26
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count194
+\l_MT_multwidth_dim=\dimen166
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen167
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen168
+\l_MT_above_intertext_sep=\dimen169
+\l_MT_below_intertext_sep=\dimen170
+\l_MT_above_shortintertext_sep=\dimen171
+\l_MT_below_shortintertext_sep=\dimen172
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count195
+\decimalpart=\count196
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/qtree/qtree.sty
+Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2019/08/20 v0.3c Improved picture commands (HjG,RN,JT)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+\pIIe@GRAPH=\toks28
+\@arclen=\dimen173
+\@arcrad=\dimen174
+\@tempdimd=\dimen175
+)
+\c@treecount=\count197
+\c@branchcount=\count198
+\parentbox=\box58
+\treebox=\box59
+\treeboxone=\box60
+\treeboxtwo=\box61
+\treeboxthree=\box62
+\treeboxfour=\box63
+\treeboxfive=\box64
+\treeboxsix=\box65
+\treeboxseven=\box66
+\treeboxeight=\box67
+\treeboxnine=\box68
+\treeboxten=\box69
+\treeboxeleven=\box70
+\treeboxtwelve=\box71
+\treeboxthirteen=\box72
+\treeboxfourteen=\box73
+\treeboxfifteen=\box74
+\treeboxsixteen=\box75
+\treeboxseventeen=\box76
+\treeboxeighteen=\box77
+\treeboxnineteen=\box78
+\treeboxtwenty=\box79
+\treeoffsetone=\skip59
+\treeoffsettwo=\skip60
+\treeoffsetthree=\skip61
+\treeoffsetfour=\skip62
+\treeoffsetfive=\skip63
+\treeoffsetsix=\skip64
+\treeoffsetseven=\skip65
+\treeoffseteight=\skip66
+\treeoffsetnine=\skip67
+\treeoffsetten=\skip68
+\treeoffseteleven=\skip69
+\treeoffsettwelve=\skip70
+\treeoffsetthirteen=\skip71
+\treeoffsetfourteen=\skip72
+\treeoffsetfifteen=\skip73
+\treeoffsetsixteen=\skip74
+\treeoffsetseventeen=\skip75
+\treeoffseteighteen=\skip76
+\treeoffsetnineteen=\skip77
+\treeoffsettwenty=\skip78
+\treeshiftone=\skip79
+\treeshifttwo=\skip80
+\treeshiftthree=\skip81
+\treeshiftfour=\skip82
+\treeshiftfive=\skip83
+\treeshiftsix=\skip84
+\treeshiftseven=\skip85
+\treeshifteight=\skip86
+\treeshiftnine=\skip87
+\treeshiftten=\skip88
+\treeshifteleven=\skip89
+\treeshifttwelve=\skip90
+\treeshiftthirteen=\skip91
+\treeshiftfourteen=\skip92
+\treeshiftfifteen=\skip93
+\treeshiftsixteen=\skip94
+\treeshiftseventeen=\skip95
+\treeshifteighteen=\skip96
+\treeshiftnineteen=\skip97
+\treeshifttwenty=\skip98
+\treewidthone=\skip99
+\treewidthtwo=\skip100
+\treewidththree=\skip101
+\treewidthfour=\skip102
+\treewidthfive=\skip103
+\treewidthsix=\skip104
+\treewidthseven=\skip105
+\treewidtheight=\skip106
+\treewidthnine=\skip107
+\treewidthten=\skip108
+\treewidtheleven=\skip109
+\treewidthtwelve=\skip110
+\treewidththirteen=\skip111
+\treewidthfourteen=\skip112
+\treewidthfifteen=\skip113
+\treewidthsixteen=\skip114
+\treewidthseventeen=\skip115
+\treewidtheighteen=\skip116
+\treewidthnineteen=\skip117
+\treewidthtwenty=\skip118
+\daughteroffsetone=\skip119
+\daughteroffsettwo=\skip120
+\daughteroffsetthree=\skip121
+\daughteroffsetfour=\skip122
+\branchwidthone=\skip123
+\branchwidthtwo=\skip124
+\branchwidththree=\skip125
+\branchwidthfour=\skip126
+\parentoffset=\skip127
+\treeoffset=\skip128
+\daughteroffset=\skip129
+\branchwidth=\skip130
+\parentwidth=\skip131
+\treewidth=\skip132
+\qta=\toks29
+\qtb=\toks30
+\nbranches=\count199
+\qroofx=\count266
+\qroofy=\count267
+\@qrscratchbox=\box80
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen176
+\ar@mcellbox=\box81
+\extrarowheight=\dimen177
+\NC@list=\toks31
+\extratabsurround=\skip133
+\backup@length=\skip134
+\ar@cellbox=\box82
+)
+\everycr=\toks32
+\minrowclearance=\skip135
+)
+\rownum=\count268
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/fourier/fourier.sty
+Package: fourier 2020/01/14 2.1 fourier-GUTenberg package
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+Now handling font encoding FML ...
+... no UTF-8 mapping file for font encoding FML
+Now handling font encoding FMS ...
+... no UTF-8 mapping file for font encoding FMS
+Now handling font encoding FMX ...
+... no UTF-8 mapping file for font encoding FMX
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
+12.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/fourier/t1futs.fd
+File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2020/01/14 2.1 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 61.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> T1/futs/m/n on input line 61.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/m/n on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 62.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 70.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 70.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> FML/futmi/m/it on input line 70.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 70.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> FML/futmi/m/it on input line 70.
+\symotherletters=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 72.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 74.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 84.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 124.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 124.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> FMS/futm/m/n on input line 124.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 124.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 124.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 125.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+25.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 125.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 125
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 125.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 126.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 126.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 126.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 127.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/futs/m/it on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/futs/m/it on input line 128.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 130.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 136.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 140.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 14
+1.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
+42.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 144.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 145.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 151.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 162
+.
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 166.
+
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 167.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 197.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 198.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 221.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 226.
+LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 228.
+LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 230.
+LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 232.
+LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 234.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 236.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 238.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 240.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 242.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 244.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 246.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 248.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 250.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 252.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 254.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 258.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 259.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 260.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 261.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 262.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 263.
+LaTeX Font Info:    Redeclaring math accent \check on input line 264.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 265.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 266.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 267.
+\symUfutm=\mathgroup7
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/textgreek/textgreek.sty
+Package: textgreek 2011/10/09 v0.7 Greek symbols in text
+Package textgreek Info: Loading the definitions for the Greek fontencoding. on 
+input line 39.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+File: lgrenc.def 2019/07/09 v0.13.3 LGR Greek font encoding definitions
+Now handling font encoding LGR ...
+... no UTF-8 mapping file for font encoding LGR
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+File: greek-fontenc.def 2015/08/04 v0.13.4 Common Greek font encoding definitio
+ns
+))
+Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
+*}. on input line 69.
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen178
+\TX@old@table=\dimen179
+\TX@old@col=\dimen180
+\TX@target=\dimen181
+\TX@delta=\dimen182
+\TX@cols=\count269
+\TX@ftn=\toks33
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen183
+\lightrulewidth=\dimen184
+\cmidrulewidth=\dimen185
+\belowrulesep=\dimen186
+\belowbottomsep=\dimen187
+\aboverulesep=\dimen188
+\abovetopsep=\dimen189
+\cmidrulesep=\dimen190
+\cmidrulekern=\dimen191
+\defaultaddspace=\dimen192
+\@cmidla=\count270
+\@cmidlb=\count271
+\@aboverulesep=\dimen193
+\@belowrulesep=\dimen194
+\@thisruleclass=\count272
+\@lastruleclass=\count273
+\@thisrulewidth=\dimen195
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+Now handling font encoding T3 ...
+... no UTF-8 mapping file for font encoding T3
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 356.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
+57.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/28 3.41 The Babel package
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/28 3.41 Babel switching mechanism
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/28 3.41 Babel common definitions
+\babel@savecnt=\count274
+\U@D=\dimen196
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count275
+)
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language5) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language5) on input line 108.
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen197
+\Hy@linkcounter=\count276
+\Hy@pagecounter=\count277
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count278
+\pdfmajorversion=\count279
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count280
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen198
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count281
+\Field@Width=\dimen199
+\Fld@charsize=\dimen256
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count282
+\c@Item=\count283
+\c@Hfootnote=\count284
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count285
+\c@bookmark@seq@number=\count286
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip136
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 44.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen257
+\pgfutil@tempdimb=\dimen258
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.
+tex))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box83
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen259
+\Gin@req@width=\dimen260
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.
+tex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen261
+\pgf@y=\dimen262
+\pgf@xa=\dimen263
+\pgf@ya=\dimen264
+\pgf@xb=\dimen265
+\pgf@yb=\dimen266
+\pgf@xc=\dimen267
+\pgf@yc=\dimen268
+\pgf@xd=\dimen269
+\pgf@yd=\dimen270
+\w@pgf@writea=\write4
+\r@pgf@reada=\read4
+\c@pgf@counta=\count287
+\c@pgf@countb=\count288
+\c@pgf@countc=\count289
+\c@pgf@countd=\count290
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count291
+ (/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.d
+ef
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code
+.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count292
+\pgfsyssoftpath@bigbuffer@items=\count293
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code
+.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen271
+\pgfmath@count=\count294
+\pgfmath@box=\box84
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.cod
+e.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonome
+tric.code.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.co
+de.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compariso
+n.code.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code
+.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.cod
+e.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code
+.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerar
+ithmetics.code.tex)))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count295
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.t
+ex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen272
+\pgf@picmaxx=\dimen273
+\pgf@picminy=\dimen274
+\pgf@picmaxy=\dimen275
+\pgf@pathminx=\dimen276
+\pgf@pathmaxx=\dimen277
+\pgf@pathminy=\dimen278
+\pgf@pathmaxy=\dimen279
+\pgf@xx=\dimen280
+\pgf@xy=\dimen281
+\pgf@yx=\dimen282
+\pgf@yy=\dimen283
+\pgf@zx=\dimen284
+\pgf@zy=\dimen285
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct
+.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen286
+\pgf@path@lasty=\dimen287
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.cod
+e.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen288
+\pgf@shorten@start@additional=\dimen289
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.t
+ex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box85
+\pgf@hbox=\box86
+\pgf@layerbox@main=\box87
+\pgf@picture@serial@count=\count296
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.
+code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen290
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformatio
+ns.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen291
+\pgf@pt@y=\dimen292
+\pgf@pt@temp=\dimen293
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.te
+x
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.
+tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessin
+g.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.t
+ex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen294
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.te
+x
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen295
+\pgf@sys@shading@range@num=\count297
+\pgf@shadingcount=\count298
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.te
+x
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code
+.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box88
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.t
+ex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.
+code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code
+.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+x
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box89
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-6
+5.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen296
+\pgf@nodesepend=\dimen297
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-1
+8.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen298
+\pgffor@skip=\dimen299
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.te
+x
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandler
+s.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen300
+)
+\tikz@lastx=\dimen301
+\tikz@lasty=\dimen302
+\tikz@lastxsaved=\dimen303
+\tikz@lastysaved=\dimen304
+\tikz@lastmovetox=\dimen305
+\tikz@lastmovetoy=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
+\tikz@figbox=\box90
+\tikz@figbox@bg=\box91
+\tikz@tempbox=\box92
+\tikz@tempbox@bg=\box93
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.te
+x
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
+)
+\tikz@expandcount=\count307
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
+kzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
+kzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code
+.tex
+File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\arrowsize=\dimen309
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
+kzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
+kzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshap
+es.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodepartlowerbox=\box94
+\pgfnodeparttwobox=\box95
+\pgfnodepartthreebox=\box96
+\pgfnodepartfourbox=\box97
+\pgfnodeparttwentybox=\box98
+\pgfnodepartnineteenbox=\box99
+\pgfnodeparteighteenbox=\box100
+\pgfnodepartseventeenbox=\box101
+\pgfnodepartsixteenbox=\box102
+\pgfnodepartfifteenbox=\box103
+\pgfnodepartfourteenbox=\box104
+\pgfnodepartthirteenbox=\box105
+\pgfnodeparttwelvebox=\box106
+\pgfnodepartelevenbox=\box107
+\pgfnodeparttenbox=\box108
+\pgfnodepartninebox=\box109
+\pgfnodeparteightbox=\box110
+\pgfnodepartsevenbox=\box111
+\pgfnodepartsixbox=\box112
+\pgfnodepartfivebox=\box113
+)))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
+kzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
+kzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
+kzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshap
+es.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-25 L3 programming layer (loader) 
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count308
+\l__pdf_internal_box=\box114
+))
+Package: xparse 2020-02-25 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count309
+\g__xparse_grabber_int=\count310
+\l__xparse_m_args_int=\count311
+\l__xparse_v_nesting_int=\count312
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/expex/expex.sty
+Package: expex 5/1/2017 v5.1b LaTex wrapper for expex.tex (JF)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks46
+\XKV@tempa@toks=\toks47
+)
+\XKV@depth=\count313
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/expex/expex.tex
+File: expex.tex 5/25/2017 v5.1b ExPex linguistics example formatter (JF)
+\ep@dima=\dimen310
+\ep@dimb=\dimen311
+\ep@dimc=\dimen312
+\ep@cnta=\count314
+\epc@b=\count315
+\excnt=\count316
+\numbox=\box115
+\epd@numright=\dimen313
+\pexcnt=\count317
+\epd@labelleft=\dimen314
+\epd@labelright=\dimen315
+\epd@textleft=\dimen316
+\epd@preambleleft=\dimen317
+\epd@sampleexnowidth=\dimen318
+\ep@everylabel=\toks48
+\exnobox=\box116
+\ling@tagsfile=\write5
+\ling@tagsin=\read5
+\glstrutbox=\box117
+\ep@cascadeindent=\dimen319
+\ep@hangindentamount=\dimen320
+\ep@cascadecount=\count318
+\gltoks@a=\toks49
+\gltoks@b=\toks50
+\glw@maxht=\dimen321
+\glw@maxdp=\dimen322
+\@itemtype=\count319
+\gl@maxdplast=\dimen323
+\gltoks@sofar=\toks51
+\gltoks@every=\toks52
+\gltoks@next=\toks53
+\debug@glword=\box118
+\@glaparsestate=\count320
+\glwcascade@pshapeindent=\dimen324
+\glwcascade@pshapelinewd=\dimen325
+\ssleftwd=\dimen326
+\ssrightwd=\dimen327
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/scalerel/scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
+ng of objects, relative to a reference object or in absolute terms
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count321
+)
+\thesrwidth=\skip137
+\thesrheight=\skip138
+\srblobheight=\skip139
+\srblobdepth=\skip140
+\mnxsrwidth=\skip141
+\LMex=\skip142
+\LMpt=\skip143
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip144
+\enit@outerparindent=\dimen328
+\enit@toks=\toks54
+\enit@inbox=\box119
+\enit@count@id=\count322
+\enitdp@description=\count323
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/adforn/adforn.sty
+Package: adforn 2019/10/13 v1.1b adforn CFR
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+LaTeX Font Info:    Trying to load font information for U+OrnementsADF on input
+ line 4.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/adforn/uornementsadf.fd))
+\enitdp@summary=\count324
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks55
+\verbatim@line=\toks56
+\verbatim@in@stream=\read6
+)
+\tcb@titlebox=\box120
+\tcb@upperbox=\box121
+\tcb@lowerbox=\box122
+\tcb@phantombox=\box123
+\c@tcbbreakpart=\count325
+\c@tcblayer=\count326
+\tcolorbox@number=\count327
+\tcb@temp=\box124
+\tcb@temp=\box125
+\tcb@temp=\box126
+\tcb@temp=\box127
+\tcb@out=\write6
+\tcb@record@out=\write7
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
+kzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@layerbox@background=\box128
+\pgf@layerboxsaved@background=\box129
+)
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+))
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+)
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line
+ 13.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
+13.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/fourier/fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
+13.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/fourier/fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 13.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 13.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 
+13.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/fourier/fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 13.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 13.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 13.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
+3.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+3.
+
+(/home/keny/.TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <10> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <17.28> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <24.88> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <9> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <8> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <5> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 13.
+ )
+Beginning to dump on file plurals_event_chap_34.fmt
+ (preloaded format=plurals_event_chap_34 2020.3.12)
+43295 strings of total length 789195
+753718 memory locations dumped; current usage is 873&742603
+40895 multiletter control sequences
+\font\nullfont=nullfont
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+\font\c__fp_exp_intarray=cmr10 at 0.00002pt
+\font\c__fp_trig_intarray=cmr10 at 0.00003pt
+\font\g__regex_charcode_intarray=cmr10 at 0.00005pt
+\font\g__regex_catcode_intarray=cmr10 at 0.00006pt
+\font\g__regex_balance_intarray=cmr10 at 0.00008pt
+\font\g__regex_state_active_intarray=cmr10 at 0.00009pt
+\font\g__regex_thread_state_intarray=cmr10 at 0.0001pt
+\font\g__regex_submatch_prev_intarray=cmr10 at 0.00012pt
+\font\g__regex_submatch_begin_intarray=cmr10 at 0.00014pt
+\font\g__regex_submatch_end_intarray=cmr10 at 0.00015pt
+\font\T1/cmr/m/n/10=ecrm1000
+\font\sixly=lasy6
+\font\T1/futs/m/n/10=futr8t
+\font\T1/futs/m/sl/10=futro8t
+\font\T1/futs/m/it/10=futri8t
+\font\T1/futs/b/n/10=futb8t
+\font\T1/cmss/m/n/10=ecss1000
+\font\U/pzd/m/n/10=pzdr
+\font\U/psy/m/n/10=psyr
+\font\U/OrnementsADF/m/n/10=OrnementsADF
+\font\T1/futs/m/n/7.6=futr8t at 7.6pt
+\font\T1/futs/m/n/6=futr8t at 6.0pt
+\font\FML/futmi/m/it/10=futmii
+\font\FML/futmi/m/it/7.6=futmii at 7.6pt
+\font\FML/futmi/m/it/6=futmii at 6.0pt
+\font\FMS/futm/m/n/10=futsy
+\font\FMS/futm/m/n/7.6=futsy at 7.6pt
+\font\FMS/futm/m/n/6=futsy at 6.0pt
+\font\FMX/futm/m/n/10=fourier-mex at 9.19998pt
+\font\FMX/futm/m/n/7.6=fourier-mex at 6.99199pt
+\font\FMX/futm/m/n/6=fourier-mex at 5.51999pt
+\font\U/msa/m/n/10=msam10
+\font\U/msa/m/n/7.6=msam7 at 7.6pt
+\font\U/msa/m/n/6=msam7 at 6.0pt
+\font\U/msb/m/n/10=msbm10
+\font\U/msb/m/n/7.6=msbm7 at 7.6pt
+\font\U/msb/m/n/6=msbm7 at 6.0pt
+\font\FML/futm/m/it/10=futmi
+\font\FML/futm/m/it/7.6=futmi at 7.6pt
+\font\FML/futm/m/it/6=futmi at 6.0pt
+\font\U/futm/m/n/10=fourier-bb at 9.19998pt
+\font\U/futm/m/n/7.6=fourier-bb at 6.99199pt
+\font\U/futm/m/n/6=fourier-bb at 5.51999pt
+\font\U/stmry/m/n/10=stmary10
+\font\U/stmry/m/n/8=stmary8
+\font\U/stmry/m/n/6=stmary6
+\font\T1/cmtt/m/n/10=ectt1000
+\font\T1/futs/b/it/10=futbi8t
+\font\T1/futs/b/it/12=futbi8t at 12.0pt
+\font\T1/futs/b/it/14.4=futbi8t at 14.4pt
+\font\T1/futs/b/it/17.28=futbi8t at 17.28pt
+\font\T1/futs/b/it/24.88=futbi8t at 24.88pt
+\font\T1/futs/b/it/9=futbi8t at 9.0pt
+\font\T1/futs/b/it/8=futbi8t at 8.0pt
+\font\T1/futs/b/it/5=futbi8t at 5.0pt
+604029 words of font info for 69 preloaded fonts
+36 hyphenation exceptions
+Hyphenation trie of length 81131 has 1737 ops out of 35111
+  377 for language 6
+  224 for language 5
+  475 for language 4
+  478 for language 3
+  2 for language 1
+  181 for language 0
+0 words of pdfTeX memory
+3 indirect objects
+No pages of output.
+PDF statistics:
+ 3 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
