@@ -1,4 +1,4 @@
-%&plurals_event_chap_34
+%&plurals_event
 % %PRECOMPILE COMMAND pdftex -ini -jobname="plurals_event_chap_34" "&pdflatex" mylatexformat.ltx plurals_event_chap_34.tex
 % \documentclass[english]{article}
 % \usepackage[T1]{fontenc}
@@ -9,9 +9,9 @@
 % \usepackage{parskip}
 
 % \lingset{interpartskip = -5pt}
-% \lingset{aboveexskip = 3pt,belowexskip = 3pt}
+% \lingset{aboveexskip = 3pt,belowexskip = 3pt, belowpreambleskip = -3pt}
 
-\endofdump
+% \endofdump
 
 \definecolor{darkred}{rgb}{0.4,0,0}
 
@@ -22,6 +22,208 @@
 
 \begin{document}
 \maketitle
+
+\section{What are events?}
+
+Events are objects, just like any other objects, Schein professes. He builds an interesting analogy with \emph{baseball game}. Part of the meaning of \emph{baseball game} includes a specification of roles for different individuals: two teams, batters, runners, people on the bench. In the same way, part of the meaning of events predicates like \emph{cook}, will contain a certain number of roles associated with cooking: the cook, the ingredients, the meal being prepared. The arguments of the verb come to be identified with this role in a manner described by the grammar.
+
+In a footnote that I don't claim to understand fully, Schein seems to imply that \quo{standard} thematic roles, like \textsc{Agent}, \textsc{Theme}, \textsc{Experiencer}, are not primitive in any sense. They simply represent generalizations that we linguists have come to make over the meaning of many verbs.  What is primitive is the roles specified by the meaning of the event predicate. Thus, an \emph{eating} involved an \emph{eater} and and \emph{eaten}.
+
+\section{Previous arguments that we need Neo-Davidsonian logical forms}
+
+The basic phenomenon to be accounted for is the fact that verbal predicates seem to be able to take an indefinite number of arguments.
+
+\pex
+\a I buttered my toast. \label{exa}
+\a I buttered my toast with a knife. \label{exb}
+\a I buttered my toast with a knife around midnight. \label{exc}
+\a I buttered my toast with a knife around midnight in the bathroom. \label{exd}
+\a \ldots
+\xe
+%
+Furthermore, the sentences with more arguments entail the sentences with less arguments: \cref{exd}$\Rightarrow$\cref{exc}$\Rightarrow$\cref{exb}$\Rightarrow$\cref{exa}
+
+
+This state of affair is expected with Neo-Davidsonian logical forms:
+
+\ex
+$\exists e, \text{butter}(e)\wedge \textsc{Agent}(e)(\dbb{I})\wedge \textsc{Theme}(e)(\dbb{my toast})\wedge \textsc{Instrument}(e)(\dbb{a knife})\wedge \tau(e)\approx \dbb{midnight}
+ \wedge \textsc{Loc}(e) = \dbb{the bathroom}
+$
+\xe
+%
+In particular, adjuncts of the same type can stack indefinitely:
+
+\pex\label{meeting}
+\a They met.
+\a They met in the US in a highway resting area.
+\a They met in the US in a highway resting area in a run-down dine-in.
+\xe
+%
+\paragraph{Against conjunctive TCs without events.}Schein remarks that can account for the relation between the sentences in \clastx, without being committed to events at all. Take \emph{meet} to be a two place predicate between individuals and locations:
+
+\ex
+$\dbb{met}\left(\dbb{they}\right)\left(\dbb{US}\right) \wedge\dbb{met}\left(\dbb{they}\right)\left(\dbb{highway resting area}\right) \wedge\dbb{met}\left(\dbb{they}\right)\left(\dbb{run-down dine-in}\right)$
+\xe
+%
+To account for (\ref{meeting}a), one could imagine two possibilities: 1) treat the location-less variant of \emph{meet} as an existentially closed version of the location-full, 2) treat them as separate lexical items related by meaning postulate
+
+\pex
+\a \textbf{Existential closure:} \\
+$\dbb{They met} = \exists l,\ \dbb{met}(\dbb{They})(l)$
+\a \textbf{Ambiguity + meaning postulates:} \\
+\emph{meet}\textsubscript{1} (type $eet$) $\neq$ \emph{meet}\textsubscript{2} (type $et$)\\
+\emph{postulate:} $\dbb{meet\textsubscript{1}}(x)(l) \Rightarrow \dbb{meet\textsubscript{2}}(x)$
+\xe
+%
+The counter-argument to this view is quite interesting. This event-lesst account predicts all the entailments we find but it over-generates entailments. In particular, the conjunction of \cnextx[a] and \cnextx[b] is predicted to entail \cnextx[c]. However, the conjunction could be interpreted to talk about 2 different meetings and \cnextx[c] doesn't:
+
+\pex
+\a They met in the US
+\a They met in a highway resting area
+\a They met in the US in a highway resting area.
+\xe
+%
+The Neo-Davidsonian TCs, on the other hand, have existentials over events, the entailment cannot go through:
+
+\ex
+$\exists e, \dbb{meet}(e) \wedge \textsc{Loc}(e) = \dbb{US} \wedge \exists e', \dbb{meet}(e) \wedge \textsc{Loc}(e') = \dbb{a highway resting area}$\\
+$\nRightarrow$\\
+$\exists e, \dbb{meet}(e) \wedge \textsc{Loc}(e) = \dbb{US} \wedge  \textsc{Loc}(e) = \dbb{a highway resting area}$
+\xe
+%
+The argument, Schein claims, following Parsons, extends to states:
+
+\pex \clastx[a] + \clastx[b] $\nRightarrow$ \clastx[c]
+\a IBM is in Paris.
+\a IBM is in a hilly area.
+\a IBM is in Paris in a hilly area.
+\xe
+%
+\pex~ \clastx[a] + \clastx[b] $\nRightarrow$ \clastx[c]
+\a Peanuts tastes good with ice-cream.
+\a Peanuts tastes good in Sichuan sauce.
+\a Peanuts tastes good with ice-cream in Sichuan sauce.
+\xe
+%
+\pex~ \clastx[a] + \clastx[b] $\nRightarrow$ \clastx[c]
+\a Pat has freckles on the front.
+\a Pat has freckles below the neck.
+\a Pat has freckles on the front below the neck.
+\xe
+%
+Some of these examples are more convincing than others. For instance, a no-event LF can capture the lack of entailment in \clastx, simply because of the existential \emph{freckles}.
+
+\pex
+\a $\exists x,\ \dbb{freckles}(x) \wedge \dbb{have}(x)(\dbb{Pat})\wedge \dbb{on}(\dbb{the front})(x)$
+\a $\exists x,\ \dbb{freckles}(x) \wedge \dbb{have}(x)(\dbb{Pat})\wedge \dbb{below}(\dbb{the neck})(x)$
+\a $\exists x,\ \dbb{freckles}(x) \wedge \dbb{have}(x)(\dbb{Pat})\wedge \dbb{below}(\dbb{the neck})(x)
+\wedge \dbb{on}(\dbb{the front})(x)
+$
+\xe
+%
+Similar existentials may be in the hiding. For instance, the abstract concept \emph{IBM} cannot \emph{really} be in a physical location. Some covert existential may be in charge of converting the abstract concept to its physical location\footnote{Same way that a covert existential over instances is required to convert a kind to an instance in \emph{I saw that kind of animal on my way home}}, this existential would be responsible for the lack of entailment.
+
+\paragraph{Against conjunctive TCs with events without full separation.} One could recognize the existence of events, while denying that all arguments are separated from the verbal predicate.
+
+\pex
+\a 
+I buttered my toast with a knife around midnight in the bathroom. 
+\a
+$\exists e, \text{butter}(e, \dbb{I}, \dbb{my toast}, \dbb{a knife})\wedge \tau(e)\approx \dbb{midnight} \wedge \textsc{Loc}(e) = \dbb{the bathroom}$
+\xe
+%
+The arguments from chap. 4, if convincing, already suggests that this is wrong. But independently, this view needs to be patched up to account for the entailment:
+
+\ex\label{knife}
+I buttered the toast with a knife.
+$\Rightarrow$
+I buttered the toast.
+\xe
+%
+As earlier, we have two routes: existential closure over instruments or ambiguity and meaning postulates:
+
+\pex
+\a \textbf{Existential closure:} \\
+$\dbb{I buttered the toast} = 
+\exists i,\ \text{butter}(e, \dbb{I}, \dbb{my toast}, i)$
+\a \textbf{Ambiguity + meaning postulates:} \\
+\emph{butter}\textsubscript{1} (type $eeet$) $\neq$ \emph{butter}\textsubscript{2} (type $eet$)\\
+\emph{postulate:} $\dbb{butter\textsubscript{1}}(x)(y)(i) \Rightarrow \dbb{butter\textsubscript{2}}(x)(y)$
+\xe
+% 
+Schein rejects \clastx[a], arguing that some verbs can optionally take instruments but their instrument-less variant does not imply that any instrument was used:
+
+\ex
+The criminal threatened the hostage.
+$\Rightarrow$
+The criminal threatened the hostage with something.
+\xe
+%
+What about \clastx[b]? Here, there is no empirical argument, simply the observation that we now have different explanations for the entailment in \cref{knife} and \cnextx.
+
+\ex
+I buttered the toast in the bathroom.
+$\Rightarrow$
+I buttered the toast.
+\xe
+%
+
+\paragraph{Against Davidsonian LFs.} The question of entailment would not arise for the tenant of partial separation if she restricted her claim to \emph{obligatory arguments}.
+
+\pex
+\a 
+I buttered my toast with a knife around midnight in the bathroom. 
+\a
+$\exists e, \text{butter}(e, \dbb{I}, \dbb{my toast}) \wedge \textsc{Instrument}(e) =\dbb{a knife}\wedge \tau(e)\approx \dbb{midnight} \wedge \textsc{Loc}(e) = \dbb{the bathroom}$
+\xe
+%
+Again, the arguments of chap. 4 have already made a case against this type of LF. But Parsons, as presented by Schein, has a strange argument to rebutt this view. Parsons notices the non-contradictoriness of \cnextx:
+
+\ex\label{dream}
+In a dream last night, I was stabbed although in fact, nobody stabbed me and I wasn't stabbed by anyone
+\xe
+%
+In Neo-Davidsonian semantics, passives like \quo{I was stabbed} do not need existential closure. Thus, there is a way to represent \clastx which is not contradictory:
+
+\ex
+$\exists e, \dbb{stab}(e) \wedge \textsc{Theme}(e) = \dbb{I} \wedge\left(\neg\exists x, \textsc{Agent}(e) = x\right) \wedge \left(\neg\exists y, \textsc{Instrument}(e) = x\right)$
+\xe
+%
+The Davidsonian's TCs should be contradictory:
+
+\ex
+$\exists e, \exists x\dbb{stab}(\dbb{I})(x)(e) \wedge 
+ \left(\neg\exists x\dbb{stab}(\dbb{I})(x)(e)\right)$
+\xe
+%
+The status of contradictions like \cref{dream} in language is mysterious and ill-understood. The Davidsonian could retort that in order to accommodate the contradiction, speaker accommodate a slightly different meaning of \emph{stab}, one that would not require a stabber or a stabbing instrument. But Schein observes this possibility wouldn't predict the following asymmetry:
+
+\pex
+In a dream last night, I was stabbed but it wasn't a real stabbing.
+Wounds didn't hurt, open or bleed.
+The assailant and the weapon were invisible \ldots
+\a\ljudge\# \ldots the assailant missed: I wasn't touched.
+\a \ldots the assailant missed, but I got cut anyways.\footnote{
+(A naive speaker that I consulted found both continuations equally contradictory.)
+}
+\xe
+%
+The idea is that in dream reports, we can successfully report that the stabbing had no agent, but not that the striking didn't happen. 
+If hearers can accommodate contradictions by changing the meaning of the predicate, why would the latter be impossible?
+
+The sentences in \clastx are supremely confusing to make that point. The mention of an \quo{assailant} makes it hard to imagine that the assailant is not also the stabber. The invisibility of the assailant is also misleading: the Davidsonian semantics doesn't rule out invisible stabbers. This is my attempt at constructing the case in point
+
+\pex
+In a dream last night, I was stabbed but it wasn't really a real stabbing\ldots
+\a 
+\ldots(\#?) The assailant pushed his dagger through my chest but I wasn't wounded, I didn't bleed, I was untouched.
+\a 
+\ldots I wasn't stabbed by anyone or anything really. The wounds just opened and starting bleeding spontaneously.
+\xe
+%
+Under a Neo-Davidsonian view, there is no contradiction about the absence of a stabber, because the meaning of \emph{stab} makes no reference to 	a \emph{stabber}, which is introduced in dependently by the thematic role head. Therefore, in dream worlds, one may see such events of stabber-less stabbings occur. However, there is still a core, unchanging meaning of stabbing which involve some type of wounding.
+
 
 
 \end{document}

@@ -1,4 +1,4 @@
-%&plurals_event_chap_34
+%&plurals_event
 % %PRECOMPILE COMMAND pdftex -ini -jobname="plurals_event_chap_34" "&pdflatex" mylatexformat.ltx plurals_event_chap_34.tex
 % \documentclass[english]{article}
 % \usepackage[T1]{fontenc}
@@ -16,6 +16,12 @@
 \definecolor{darkred}{rgb}{0.4,0,0}
 
 \newcommand{\scale}1
+
+\NewEnviron{nothing}
+{
+}
+
+
 
 \title{Plurals and events (chap. 4) : Essential Separation}
 \author{Keny Chatain}
@@ -81,6 +87,7 @@ An argument of impossibility is tricky to make: one needs to make sure that the 
 % %
 % He prefers the following route which does the same thing that \emph{same} does with only material \quo{within the fragment that we are holding polyadic logical form responsible to}.
 
+\begin{nothing}
 \section{Playing with composition: quantifiers \& scope}
 
 The truth conditions for \cref{quat} that we aim for should be true in the following scenario:
@@ -154,7 +161,6 @@ This paraphrase can only be obtained if we have at least two operators in our LF
 
 
 \paragraph{Option II: branching quantifiers} Schein considers the possibility that \quo{three video-games} and \quo{every quarterback} could somehow form a binary quantifier. Barwise (1979) gives an overview of how we can make sense of such a notion. However, Schein seems to use a different home-brewed version of this notion. After a lot of extracting and restating, here is what I think is meant\footnote{Using modern terminology. The restatement is not 100\% accurate, as it seems Schein's formulation allows for different covers to be picked in the two conjuncts of the cumulative statements. I gloss over that detail as it allows a more conspicuous statement.}\textsuperscript{,}\footnote{Given the restatement, binary quantifiers are a red herring. Binary quantifiers are a way to create logical formulas where neither quantifier scope above the other. This is not so here. Rather, most of the work of binary quantfiers is to change what relation $R$ is fed to the quantifiers. We could restate this section using unary quantifiers and \emph{Cov} operator}:
-
 \pex
 \a 
 If $Q$ and $Q'$ are two quantifiers,\\
@@ -227,6 +233,7 @@ This would seem to allow for this video-game to teach more than two plays, simpl
 $\wedge$ $\exists y\in\dbb{big monitor},$ $\dbb{on}(e)(y)$
 \xe
 %
+\end{nothing}
 
 \section{What about the event quantifier? What about other denotations of \emph{every}?}
 If I am right that the main problem of \cref{long_big_monitor} is really all about the last two quantifiers, then much of the rest of the chapter is irrelevant. Indeed, Schein attempts several solutions that all meddle with the first two quantifiers. For sake of having an exhaustive review, I will present these arguments nonetheless.
@@ -245,10 +252,9 @@ Denotation of teach
 \paragraph{Denotation of $\dbb{teach}$} Here, we have one constraint: the predicate denoted by \emph{teach} must \quo{express a true relation}. By that, he means that $\dbb{teach}(X)(y)(Z)(e)$ is true then Z must teach Y to X (at $e$)\footnote{The use of the locution \quo{at $e$} suggests that Schein uses events the way people use situations ; they are simply bundle of facts. If left unconstrained, it may be become hard to define thematic role heads in this view.}. So far, we've been assuming the weakest meaning  compatible with this requirement, i.e. \cnextx. 
 
 
-\pex
-\a \textbf{Inexhaustive}\\
+\ex
+ \textbf{Inexhaustive}\\
 $\dbb{teach}(X)(y)(Z)(e)$ iff Z teaches y to X (at $e$)
-\a 
 \xe
 %
 But we could impose further requirement:
@@ -258,7 +264,7 @@ But we could impose further requirement:
 $\dbb{teach}(X)(y)(Z)(e)$ iff Z teaches y to X (at $e$)\\
 $\forall Z', X', Y'$ Z' teaches Y' to X' (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$\\
 \a 
-The only teachers of the event are $Z$
+The only teachers of the event are $Z$\\
 The only taught of the event are $X$
 \xe
 %
@@ -269,7 +275,7 @@ $\dbb{teach}(X)(y)(Z)(e)$ iff Z teaches y to X (at $e$)\\
 $\forall Z', X'$ Z' teaches y to X' (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$\\
 \a 
 X is everything taught $y$\\
-Z is everything teaching $y$\\
+Z is everything teaching $y$
 \xe
 %
 \pex \textbf{Fully exhaustive}
@@ -278,7 +284,7 @@ $\dbb{teach}(X)(y)(Z)(e)$ iff Z teaches y to X (at $e$)\\
 $\forall Z', X', Y'$ Z' teaches Y' to X' (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$ and $Y'=Y$\\
 \a 
 X is everything taught $y$\\
-Z is everything teaching $y$\\
+Z is everything teaching $y$
 \xe
 %
 I am uncertain why Schein chooses these particular denotations. This seems to rely on the argument from chapter 3 that at least \emph{plural} arguments must be read exhaustively. Given that we now have one more argument (i.e. the monitor), we need to further refine these denotations:
@@ -288,7 +294,7 @@ I am uncertain why Schein chooses these particular denotations. This seems to re
 $\dbb{teach}(X)(y)(Z)(W)(e)$ iff Z teaches y to X on W (at $e$)\\
 $\forall Z', X', Y', W'$ $Z'$ teaches $Y'$ to $X'$ on $W'$ (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$\\
 \a 
-The only teachers of the event are $Z$
+The only teachers of the event are $Z$\\
 The only taught of the event are $X$
 \xe
 %
@@ -299,7 +305,7 @@ $\dbb{teach}(X)(y)(Z)(W)(e)$ iff Z teaches y to X on W (at $e$)\\
 $\forall Z', X'$ $Z'$ teaches y to $X'$ on $W$ (at $e$) $\rightarrow$ $Z'=Z$ and $X'=X$\\
 \a 
 X is everything taught $y$\\
-Z is everything teaching $y$\\
+Z is everything teaching $y$
 \xe
 %
 \pex \textbf{Fully exhaustive}
@@ -389,5 +395,40 @@ $\exists e,$ $\dbb{three video-games}$ \ldots $\dbb{two quarterbacks}$ \ldots $\
 \xe
 %
 If events may be summed up arbitrarily, then this formula is equivalent to a low existential and will not be of any help.
+
+\section*{Appendix}
+
+One of the crucial argument for essential separation was:
+
+\pex
+\a I received exactly two passwords on a single slip of paper
+\a \textbf{Reading:}\\
+I received exactly two passwords\\
+I received them on a single slip of paper
+\xe
+%
+With essential separation, we can create LFs where \emph{exactly 2} scopes above the agent and the theme to the exclusion of the locative:
+
+\ex{}
+[exactly 2 passwords $\lambda x.$ [I received $x$] ] on a single slip of paper
+\xe
+%
+Interestingly, \emph{exactly 2 passwords} cannot scope any lower than that, or problematic readings are over-generated
+
+\pex
+\a 
+I received exactly two passwords
+\a 
+Exactly two passwords were received by anyone.\\
+I received these passwords
+\xe
+%
+
+
+
+
+
+
+
 
 \end{document}
