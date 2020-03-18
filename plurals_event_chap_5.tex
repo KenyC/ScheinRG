@@ -224,6 +224,97 @@ In a dream last night, I was stabbed but it wasn't really a real stabbing\ldots
 %
 Under a Neo-Davidsonian view, there is no contradiction about the absence of a stabber, because the meaning of \emph{stab} makes no reference to 	a \emph{stabber}, which is introduced in dependently by the thematic role head. Therefore, in dream worlds, one may see such events of stabber-less stabbings occur. However, there is still a core, unchanging meaning of stabbing which involve some type of wounding.
 
+\section{Symmetric predicates and overlapping distinct events}
+
+This section contains some \emph{prima facie} counter-intuitive assumptions about events. Schein credits Higginbotham for them. 
+
+\paragraph{Challenge I}
+The first challenge is the following:
+
+\pex \label{beer}
+\textbf{Context:} \emph{Jasmin drank one glass of beer in exactly one hour}
+\a Jasmin drank a glassful of beer in an hour.
+\a Jasmin drank beer for an hour.
+\xe
+%
+Both \clastx[a] and \clastx[b] are judged true in this context. In fact, in the sense of \quo{event} that is used outside of linguistics and philosophy, both descriptions talk about the same event. Should we treat them as the same event? If we did, and given the suggested LFs in \cnextx, then we would be committed to both of the statements in \cref{theme} being true of the event $e$ being described:
+
+\pex
+\a $\exists e, \textsc{Agent}(e, \dbb{Jasmin}) \wedge \dbb{drink}(e)\wedge \textsc{Theme}(e, \dbb{one glassful of beer}) \wedge \textsc{In}(e, \dbb{an hour})$ 
+\a $\exists e, \textsc{Agent}(e, \dbb{Jasmin}) \wedge \dbb{drink}(e)\wedge \textsc{Theme}(e, \dbb{beer}) \wedge \textsc{For}(e, \dbb{an hour})$ \label{for}
+\xe
+%
+\pex~ \label{theme}
+\a $\textsc{Theme}(e, \dbb{beer})$
+\a $\textsc{Theme}(e, \dbb{a glassful of beer})$
+\xe
+%
+If both \emph{beer} and \emph{glassful of beer} are themes of $e$, then we should be able to substitute one for the other in the sentences above:
+
+\ex \label{beer_prob}
+ \* Jasmin drank beer in an hour.
+\xe
+%
+But we cannot. This, Schein concludes, means that the events described by \cref[a]{beer} and \cref[b]{beer} must be different, contrary to our pre-theoretic intuitions.
+
+The argument rests on shaky premises. Admittedly, the inacceptability of \cref{beer_prob} is strange. More generally, it seems that only mass nouns and bare plurals can combine with a \emph{for}-adverbial. The sensitivity of \emph{for}-adverbials to the nature of the object suggests that the semantic contribution of \emph{for} cannot in fact be treated as an independent conjunct, as the TCs in \cref{for} would have it. For instance, \emph{for} may require a subinterval property, such that all subevents of the event under description satisfy the description of the VP it attaches to:
+
+\ex
+ $\exists e, \textsc{Agent}(e, \dbb{Jasmin}) \wedge \dbb{drink}(e)\wedge \textsc{Theme}(e, \dbb{beer}) \wedge \textsc{For}(e, \dbb{an hour}) \wedge \forall e'\prec e,\ \dbb{drink}(e')\wedge \textsc{Theme}(e', \dbb{beer})$ 
+\xe
+%
+Similar things could be said about \emph{in}. If any of these adverbials involves some form of sub-event quantification, then the substitutability would be invalid and the argument would not go through.
+
+\paragraph{Challenge II}
+Non-reflexive symmetric predicates are also a problem
+
+\pex \label{carnegie}
+\a 
+The Carnegie Deli sits opposite Carnegie Hall.
+\a 
+Carnegie Hall sits opposite the Carnegie Deli.
+\xe
+%
+If both these sentences describe the same event, then we have a ready explanation for why they are equivalent. But unfortunately, just as in Challenge I, we should then be able to substitute some of the role bearers of one sentence into the next \emph{salva veritate}.
+
+\ex
+\# The Carnegie Deli sits opposite the Carnegie Deli.
+\xe
+%
+ If these sentences do not describe the same event, then we need some meaning postulate of the form: there is a state of $X$ being opposite $Y$ iff there is a state of $Y$ sitting opposite $X$. This conclusion is paradoxical That seems to frustrate the naive intuition that \cref{carnegie}[a] and \cref{carnegie}[b] describe the same state.
+
+ Follows a discussion of thematic role uniqueness that I think is irrelevant to this basic point. The end of this section is meant to convince us that the dsitinct events has desirable consequences for the analysis of bishop sentences:
+
+ \ex
+ If someone sits opposite someone else, they like them.
+ \xe
+ %
+ Assuming a covert definite description analysis of pronouns\footnote{\ldots}, no definite description can uniquely denote in absolute\ldots Unless the definite description are relativized to an event (in other words, their uniqueness condition are checked inside one particular event). If this is so, then any situation of \quo{someone sitting opposite someone else} will contain two events. In each event, there will be a distinguished sitter and a distinguished sittee, which the event-relativized definite description can pick up.
+
+ \section{Mereology}
+
+ \ex
+ Unharmoniously, every organ student sustained a note
+ \xe
+ %
+ This example is used as preliminary justification that events should have some mereology associated with them. There must be an unharmonious event whose parts are individual students' note-sustaining. The mereology conceived is just a lattice structure with $\oplus$ as a join.
+
+ In the last part of this section, Schein discusses an interesting property of objects which will also be true of event. 
+
+ \begin{center}
+\quo{ The same stuff in the world, is one individual under one description and many individual under another.}
+ \end{center}
+
+ Reichenbach's example is used to exemplify the claim. A house may contain pieces of furniture, which are themselves made of other pieces (like \emph{arm} and \emph{leg} of a chair). Look at the questions in \cnextx:
+
+ \pex
+ \a 
+ In the house, what is joined to what?
+ \a 
+ In the house, what weighs over half a ton?
+ \xe
+ %
+ These two question do not have the same set of possible answers. Intuitively, one predicate calls for a response about individuals, which are parts of furniture, while the other calls for a response about whole furniture
 
 
 \end{document}
