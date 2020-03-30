@@ -334,7 +334,7 @@ If both these sentences describe the same event, then we have a ready explanatio
 
 \begin{boxy}{Background on the game of go for the following examples}\\
 \begin{itemize}
-\item A group of stones is any set of adjacent stones of the same colour
+\item A group of stones is any set of \emph{adjacent} stones of the same color
 \item \quo{alive} is a descriptive term that refer to groups of a certain shape (basically, if a group encloses two empty spaces).
 \end{itemize}
 \end{boxy}
@@ -349,8 +349,27 @@ If both these sentences describe the same event, then we have a ready explanatio
 \a All the groups of more than 5 stones are alive.
 \xe
 %
-In \cref{empty_board}, there are no \emph{actual} group and the speaker is talking about groups that \emph{could} be formed. Schein notes that in that case, the quantifier quantifies over all combinations of stones which could be formed. This contrasts with \cref{full_board}: in \cref{full_board}, the sentence is plausibly understood as talking about all the groups on the board.
+In \cref{empty_board}, there are no \emph{actual} group and the speaker is talking about groups that \emph{could} be formed. Schein notes that in that case, the quantifier quantifies over all combinations of stones which could be formed. This contrasts with \cref{full_board}: in \cref{full_board}, the sentence is plausibly understood as talking about all the groups on the board, not the stones which are not adjacent to each other.
 
-So, Schein concludes that individuation does depend on whether the quantification is over actual or possibe individuals. Can we conclude the same thing for events?
+So, Schein concludes that individuation does depend on whether the quantification is over actual or possible individuals. It's unclear to me that we need to say anything about individuation once we make the distinction between possible as opposed to actual individuals. 
+ Can we conclude the same thing for events? Well, the trucker examples made the point that we will face van Benthem problems if we allow arbitrary sums of events to be events. However, in generic contexts, it is argued that any sums of events can be part of the quantification with the following example:
+
+ \ex
+ Twenty-five hogs can fit into twenty-five stalls
+ \xe
+ %
+ So events mirror what happens in the individual realm. Before moving on to the next chapter, Schein dispels one concern with his view of event individuation: if not all sums of events are available to quantification, how are we to make sense of distributive inference?
+
+ \pex
+ \a \textbf{Premisses:}\\
+These 10 truckers loaded one or more trucks. (event $e_1$)\\
+Those 10 truckers loaded one or more trucks. (event $e_2$)\\
+ \a \textbf{Conclusion:}\\
+ 20 truckers loaded one or more trucks. (event $e_1\oplus e_2$?)
+ \xe
+ %
+ Here, Schein solves the problem by assuming that while events are not closed under sum, sets of events are closed under union. Assuming event closure in the premisses and the conclusion is over sets of events, the reasoning follows. In short, he adapts his plural-as-set theory to the event case.
+
+ One may wonder whether this trick wouldn't generate a van Benthem problem for the original trucker example. My understanding is that the original trucker example involves generic quantification. Schein can simply assume that this type of quantification is not over sets of events.
 
 \end{document}
