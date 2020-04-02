@@ -1,0 +1,244 @@
+%&plurals_event
+% %PRECOMPILE COMMAND pdftex -ini -jobname="plurals_event_chap_34" "&pdflatex" mylatexformat.ltx plurals_event_chap_34.tex
+% \documentclass[english]{article}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+% \usepackage[sort]{natbib}
+% \usepackage{stdprmbl}
+
+% \usepackage{parskip}
+
+% \lingset{interpartskip = -5pt}
+% \lingset{aboveexskip = 3pt,belowexskip = 3pt, belowpreambleskip = -3pt}
+
+\endofdump
+
+\definecolor{darkred}{rgb}{0.4,0,0}
+
+\newcommand{\scale}1
+
+\title{Plurals and events (chap. 6) : A Semantics for Plurality and Quantification}
+\author{Keny Chatain}
+
+\begin{document}
+\maketitle
+
+In this chapter, Schein outlines the assumptions about the syntax/semantics interface.
+
+\section{}
+
+Schein assumes an indirect semantics and an LF level. This means that between the surface syntax and the truth-conditions, there occur at least three translation procedures:
+
+\ex
+Surface syntax $\Rightarrow$ LF $\Rightarrow$ Logical formula\footnote{Following May, he calls this part \emph{logical form} and reserves LF to the covert syntax level before it.} $\Rightarrow$ Model-theoretic interpretation
+\xe
+%
+The LF is taken to involve QR to disambiguate quantifier scope, as May intended it.
+
+\paragraph{Essential separation.} Schein wishes to suggest that essential separation of thematic roles is in place in the logical formulas\footnote{There is a reading of him where essential separation happens at LF but that seems crazy to me.}, i.e. that the logical form of \cnextx[a] is the logical form of \cnextx[b]
+
+\pex \label{nomore}
+\a No more than 2 detectives found solutions to no more than 5 crimes
+\a No more than 2 detectives found solutions to crimes and that was to no more than 5 crimes
+\xe
+%
+This is hard to digest, Schein recognizes, because \clastx{b} involves a non-trivial ellipsis from within a DP:
+
+\ex
+That was \sout{a finding of solutions} to no more than 5 crimes.
+\xe
+%
+If this is the reading of \cref{nomore}, then logical formulas is bound to involve non-trivial duplications of material from LF. 
+
+\paragraph{LF to logical formulas} Schein admits that he does not really know what rules of translation achieve this curious mapping. He limits himself to stating constraints on the logical formulas that he wishes his semantics to have. \underline{First,} logical formulas should start with an event quantifier which can be of one of three natures: existential, universal/generic, or anaphoric to a set of events.
+He claims that chap. 7 will demonstrate that all subsequent reference to events in the logical formula will be anaphoric.
+
+\ex
+\textbf{Logical formula:}
+$
+\left\lbrace 
+\begin{array}{l}
+\exists e,\\
+\forall e,\\
+\iota E,\\
+\end{array}
+\right\rbrace
+\hspace{2ex}
+\ldots
+\hspace{2ex}
+\iota E'
+\hspace{2ex}
+$
+\ldots
+\hspace{2ex}
+\xe
+%
+\underline{Second,} he wants to rule out very local scopes for quantifiers in DP positions. In particular, these quantifiers should take scope \emph{a minima} in the VP domain. The reason for this comes from negative quantifiers. Consider the three scope possibilities for \emph{nothing} in \cnextx:
+
+\pex
+ Nothing moved. \label{move}
+\a   
+$\exists e,\ \text{move}(e) \wedge\neg\exists x,\ \textsc{Agent}(e) = x$
+\a
+$\exists e, \neg\exists x,\ \text{move}(e) \wedge\textsc{Agent}(e) = x$
+\a 
+$\neg\exists x,\exists e,\ \text{move}(e) \wedge\textsc{Agent}(e) = x$
+\xe
+%
+The intuitive reading of \clastx[a] is guaranteed by giving widest scope to \emph{every}, as in \cnextx[c]. \cnextx[b] is vacuously true, while \cnextx[a] is false under the assumption that moving events have agents/undergoers. Schein notes interestingly, that the problematic readings are not endemic to Davidsonian semantics. In fact, the same problem would arise with time quantifiers.
+
+Regardless, Schein doesn't wish to rule out \clastx[b] immediately because he believes negative events are possible. The following sentences are cases in point:
+
+\pex
+\a It made no one move.
+\a Fatma saw no one move.
+\a Gracefully, no one moved.
+\xe
+%
+The problem is that \cref{move}b is far too weak to be a true \quo{negative event} reading. As long as there is something which is not a moving, it is true. But Schein suggests that the right reading obtains via contextual restriction (\quo{I have nothing to say about the content of [the contextual restriction]}).
+
+If we accept these diagnostics then the only thing to rule out is the local scope of the quantifier ; it suffices to impose that QR of a DP quantfier must land minimally in the VP domain.
+
+\underline{Third,} Schein assumes that QR is obligatory for singular quantifiers and optional for plural quantifiers\footnote{First- and second-order quantifiers in Schein's terminology}. The optionality of QR for plural quantifier corresponds to two different readings: with movement, the reading is distributive ; without movement, the reading is non-distributive. 
+
+\section{Definite descriptions of events}
+
+Schein notes that all singular quantifiers can be translated by an equivalent plural quantifiers. So adopting Schein's plural reference as set reference view, \cnextx[a] and \cnextx[b] are equivalent
+
+\pex
+\a 
+$\exists x, P(x)$
+\a 
+$\exists X, |X| = 1\wedge \forall x\in X, P(x) $
+\xe
+%
+What Schein wishes to suggest is that event existence closure is over plurals (aka sets). Most of the times, we are okay with a singular event closure because of the remark above but some cases require plural events:
+
+\ex
+Twenty composers collaborated on seven shows.
+\xe
+%
+The point here is that this sentence can be read as talking about multiple and rival collaborations. If this is so, a representation is incorrect as it implies that a big collaboration took place. A plural version is more adequate:
+
+\pex
+\a 
+$\exists e, \text{collaborate}(e) \wedge \ldots$
+\a 
+$\exists E,\ \forall e\in E,  \text{collaborate}(e) \wedge \ldots$
+\xe
+%
+(This is quite interesting: this does not seem to be always true of the most natural readings, contrary to what a closure-under-sum would lead us to expect:)
+
+\ex
+Four people are collaborating
+\xe
+%
+There is a theoretical motivation for set of events. As explained earlier, Schein wants a logical formula for \cnextx[a] similar to the logical formula for \cnextx[b]:
+
+\pex
+\a No more than 2 detectives found solutions to no more than 5 crimes
+\a No more than 2 detectives found solutions to crimes and that was to no more than 5 crimes
+\xe
+%
+The problem is that because \emph{no more than 2 detectives} is DE, there may be no event that the first clause of \clastx[b] is true of. If \emph{that} in the second clause denotes an event, the reference may sometimes fail.
+%
+This problem does not arise if \emph{that} refers to a sets of events: in case no event is picked up by the first clause, the set accessible to reference by \emph{that} can simply be the empty set.
+
+\section{From logical formulas to truth-conditions}
+
+\subsection{Simple version}
+
+Some logical formulas require multiple existentials over events:
+
+\pex
+\a Gracefully, every football player pushed the pram up the hill.
+\a $\exists e, \text{graceful}(e) \wedge \forall x\in \text{football player}, \exists{e'\prec e},\ $
+\xe
+%
+Schein is worried that if existential over events are freely available\footnotemark, we predict unattested readings:
+\footnotetext{Some of these worries might be alleviated if we had a clear LF to logical formulas mapping.}
+
+\pex
+I buttered the toast
+\a 
+$\exists e,\exists e',\exists e'', \text{buttered}(e) \wedge\text{Theme}(e'') = \text{the toast} \wedge\textsc{Agent}(e') = \text{I} $
+\a 
+I did something ; something was done to the toast ; some buttering happened.
+\xe
+%
+Taking his clue from temporal logic, Schein suggests that we can constrain the model-theoretic interpretation of logical formulas so that the interpretation of low-scope existentials is dependent on the interpretation of high-scope existentials.
+
+\startbox{5cm}
+\pex
+\a \boxit{\textbf{Logical formula:}} $\exists e,\exists e',\exists e'', \ldots$
+\a \boxit{\textbf{Model-theoretic interpretation:}} $\exists e,\exists e'\prec e,\exists e'' \prec e', \ldots$
+\xe
+%
+Schein doesn't develop the system because he needs a further refinement.
+
+\subsection{What about sets of events}
+
+Last subsection only talked about singular events. But we argued that the existential closure was over sets of events. 
+
+Schein proposes an extensive translation of logical formulas into model-theoretic interpretations to deal with this more complex case. I translate his formalism with assignment functions:
+
+\pex \emph{Assignment functions}
+\a Assignment functions map variables like $E$ to plural events
+\a Model-theoretic interpretation of existentials in logical formulas:\\[2pt]
+\quo{$\exists E:\Psi, \Phi$} is true wrt $g$
+ \\[2pt]iff\\[2pt]
+$\exists g',\ g'=_E g\wedge g'(E)\text{ completely overlaps some part of }g(E)$\\
+$\wedge \Psi\text{ is true wrt }g'\wedge\Phi\text{ is true wrt }g'$
+\xe
+%
+There are two important bits in these truth definitions. First, existentials over events in logical formulas shrink a previous value of $g(E)$. This evacuates the problem of multiple existentials\footnotemark:
+\footnotetext{
+Not quite: the problematic reading with multiple existentials can be emulated using existentials with different variables. So some constraint on logical formula must impose that they are all the same.
+}
+
+\pex
+I buttered the toast
+\a 
+$\exists E,\exists E',\exists E'', \textsc{Agent}(E) = \text{I}\wedge\text{Theme}(E') = \text{the toast}\wedge\text{buttered}(E'') $
+\a 
+I did something. One of the things I did was done to the toast. One of the things I did to the toast was a buttering
+\xe
+%
+Second, the notion of complete overlap. This is a mereological notion not a set-theoretic notion. Intuitively, two set of events completely overlap one another if their events are made from the same parts. 
+
+\begin{boxy}{Complete overlap.} 
+$E$ and $E'$ completely overlap one another \\
+iff every event that overlaps an event of $E$ overlaps an event of $E'$ and vice-versa
+\end{boxy}
+%
+The effects of using overlap are not directly appreciable with the existentials but with thematic roles:
+
+\ex\label{theme_role}
+Model-theoretic interpretation of thematic roles in logical formulas:\\[2pt]
+\quo{$\textsc{Agent}(E) = X$} is true wrt $g$
+ \\[2pt]iff\\[2pt]
+$\exists g',\ g'=_E g\wedge g'(E)\text{ completely overlaps }g(E)$\\
+$\wedge \forall e\in g'(E), \exists x\in X, x\text{ is an agent of }e$\\
+$\wedge \forall x\in X, \exists e\in g'(E), x\text{ is an agent of }e$\\
+\xe
+%
+Every time we incorporate an argument into the event $E$, we are allowed to substitute $E$ for a completely overlapping substitute. Here is an example where this plays a role:
+
+\pex
+\a 
+\textbf{Context:}
+\emph{
+Brotherhoods of ninja turtles eat separately from each other, each on their own table. 
+Within a brotherhood, the turtles share slices of pizza.
+A single brotherhood never eats a whole pizza.
+}
+\a 
+A hundred and seventeen turtles shared twenty-three pizzas.
+\xe
+%
+From the verb \emph{shared}, we know that the sentence describes a set of sharing events, presumably one for each table. \quo{twenty-three pizzas}  describes a set of twenty-three pizzas. However, the themes of the event of the turtle's sharing do not form a set of twenty-three pizzas. Rather, they form a set of slices, because the turtles' brotherhood eat by the slice.
+
+Without introducing event overlap in our system, we would predict the sentence to come out as false.
+However, substitution of the set of events by a completely overlapping set of events in \cref{theme_role} is useful here. In evaluating whether the pizzas are the theme of that event, we may substitute the set of sharing events with the set of eating events.
+
+\end{document}
