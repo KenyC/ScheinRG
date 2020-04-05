@@ -232,13 +232,79 @@ Brotherhoods of ninja turtles eat separately from each other, each on their own 
 Within a brotherhood, the turtles share slices of pizza.
 A single brotherhood never eats a whole pizza.
 }
-\a 
+\a \label{exam}
 A hundred and seventeen turtles shared twenty-three pizzas.
 \xe
 %
-From the verb \emph{shared}, we know that the sentence describes a set of sharing events, presumably one for each table. \quo{twenty-three pizzas}  describes a set of twenty-three pizzas. However, the themes of the event of the turtle's sharing do not form a set of twenty-three pizzas. Rather, they form a set of slices, because the turtles' brotherhood eat by the slice.
+From the verb \emph{shared}, we know that the sentence describes a set of sharing events, presumably one for each table. \quo{twenty-three pizzas}  describes a set of twenty-three pizzas. However, the themes of the event of the turtle's sharing do not form a set of twenty-three pizzas. Rather, they form a set of slices, because the turtles' brotherhood eat by the slice. It would seem then that the sentence is false.
 
-Without introducing event overlap in our system, we would predict the sentence to come out as false.
-However, substitution of the set of events by a completely overlapping set of events in \cref{theme_role} is useful here. In evaluating whether the pizzas are the theme of that event, we may substitute the set of sharing events with the set of eating events.
+While the set of all sharings does not completely overlap with one sharing (as the turtles are not sharing across brotherhoods), it completely overlaps with a eating. And that eating has all the pizzas as a theme. Having introduced complete overlap in our truth definitions of logical formulas, we may substitute the set of sharing events with the whole eating event when evaluating whether 23 pizzas were the theme of the event.
+
+\subsection{Should we be worried about overlap?}
+
+\paragraph{A familiar example}
+The notion of \emph{overlap} is theoretical and may not match intuitions. Schein reiterates this points with the following example from Chap. 5:
+
+\pex
+\a The Carnegie Hall sits opposite the Carnegie Deli.
+\a The Carnegie Deli sits opposite the Carnegie Hall.
+\xe
+%
+In Chap. 5, Schein showed that the sentence in \clastx cannot be taken to describe the same event/state, despite what common intuitions might suggest. Here we see that they should not even describe overlapping events. Otherwise, our truth definitions for thematic roles would allow us to replace the holders of the thematic roles from one event with the holders from another (just as we replaces pizza slices with pizzas in \cref{exam}):
+
+\ex
+The Carnegie Hall sit opposite the Carnegie Deli.
+\xe
+%
+Schein concludes that spatiotemporal complete overlap is not a sufficient condition for two events to overlap. He adds that maybe, for two states of sitting to overlap, it is furthermore required that their orientation be the same.
+
+\paragraph{An unfamiliar example}
+There are more worrying cases. Consider the following case: a psychologist compares two groups of subjects along some dimension. 
+
+\pex
+\a The nailbiters outscored the bedwetters. (\emph{sic})
+\a \textbf{Logical Formula:}\\
+$\exists E, \textsc{Agent}(E)=\text{the nailbiters} \wedge \textsc{Theme}(E)=\text{the bedwetters} \wedge \text{outscore}(E)$ \label{lf2}
+\xe
+%
+(Here, Schein seems to understand \emph{outscore} as true if the sum of scores from one group is greater than the sum of scores from the other group.) All subjects obtained the same score but there are 3 bedwetters and just two nailbiters. 
+
+Schein imagines that there is an event of scoring $e$ which includes the nailbiters and bedwetters. That event certainly includes all the nailbiters and bedwetters and is an event of \emph{outscoring} ; however, the holders of this state are not the nailbiters as \clastx seems to require but the bedwetters, so \clastx is false.
+
+
+Yet, the substitution of completely overlapping events in thematic positions seems like it could make the sentence true. In particular, it may be thought that $e$ overlaps
+with three events $e_1$, $e_2$ and $e_3$: one where the two nailbiters outscore the first bedwetter, one where they outscore the second bedwetter, one where they outscore the third bedwetter. If $e_1$, $e_2$ and $e_3$ completely overlap $e$, then we predict that we could make \cref{lf2} true.
+
+Schein concludes that $e$ must not be treated as completely overlapping $e_1$, $e_2$ and $e_3$.
+
+I've followed Schein's reasoning so far, but the problem, as he ends up noticing, is not so much about the complete overlap that we introduce in the truth definition. The reasoning was made under the assumption that $E$ in  \cref{lf2} is $e$, but nothing prevents us from considering $E=\left\lbrace e_1, e_2, e_3 \right\rbrace$. In which case the sentence is made true by the same reasoning
+
+Schein ends up claiming that the sentence is ambiguous. On one reading, the one described in \cref{lf2}, it is indeed true. However, there is a \quo{salient} reading where it talks about only 1 event:
+
+\ex
+$\exists E, \underline{|E| = 1\wedge} \textsc{Agent}(E)=\text{the nailbiters} \wedge \textsc{Theme}(E)=\text{the bedwetters} \wedge \text{outscore}(E)$ \label{lf2}
+\xe
+%
+Under that reading, the sentence can only be talking about ${e}$, ${e_1}$, ${e_2}$, ${e_3}$ but not plural events. (If this is true, notice that we lose the argument that $e_1$, $e_2$ and $e_3$ do not completely overlap $e$) 
+
+Schein tries to motivate this ambiguity by exhibiting predicates which seem to impose the plural event to be a singularity like \emph{dense}.
+
+\pex
+\a The elms are clustered ($\checkmark$ several clusters)
+\a The elms are dense ($\checkmark$ several dense spots)
+\xe
+%
+Schein suggests before retracting that this is related to the following fact:
+
+\pex
+\a The elms are all clustered.
+\a *The elms are all dense.
+\xe
+%
+
+
+
+
+
 
 \end{document}
