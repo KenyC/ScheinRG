@@ -29,7 +29,7 @@
 Last chapter spelled out the basic ingredients of the syntax/semantics interface focusing on thematic roles and the position of quantification. In this chapter, Schein spells out a little bit more the interpretation of quantifiers ; some of the assumptions made in the previous chapter are revised.
 
 
-\section{First-order quantification: \emph{every}, \emph{some\textsubscript{sg}}, \textsubscript{no\textsubscript{sg}}}
+\section{First-order quantification: \emph{every}, \emph{some\textsubscript{sg}}, \emph{no\textsubscript{sg}}}
 %
 His theory comports two types of quantifiers: first-order quantifiers (i.e. quantifiers over singularities) and second-order quantifiers (i.e. quantifiers over pluralities). 
 
@@ -61,7 +61,7 @@ I depart from Schein who is strangely inconsistent with the description of simil
 \a \label{sono}
 Somebody loves nobody.
 \a 
-$\exists x\in\dbb{person},\exists E, \neg\exists y\in \dbb{person}, \exists E,  \textsc{Agent}(E) = x \wedge \text{love}(E) \wedge \textsc{Theme}(E) = y$\\
+$\exists x\in\dbb{person},\exists E, \neg\exists y\in \dbb{person}, \exists E,\  \textsc{Agent}(E) = x \wedge \text{love}(E) \wedge \textsc{Theme}(E) = y$\\
 \quo{for some person, there is a sub-event in which nobody is loved by that person}
 \xe
 %
@@ -261,7 +261,7 @@ Two video-games taught two quarterbacks
 $\exists E,$\\
 $\exists Z\in \text{two-video-games}, \ag({\color{red!80!black} E}) = Z$\\
 $\wedge\text{teach}({\color{red!80!black} E})$\\
-$\wedge\exists Y\in \text{two-video-games}, \thm({\color{red!80!black} E}) = Y$
+$\wedge\exists Y\in \text{two-quarterbacks}, \thm({\color{red!80!black} E}) = Y$
 \xe
 %
 However, given our assumptions so far, something else needs to be posited in case any plural quantifiers introduces distributivity. For instance, repeating the logical formula for \cref{vg} below, we see that the distributivity operator introduces its own variable $E$ and the conjuncts are no longer evaluated with respect to the same $E$.
@@ -280,25 +280,60 @@ $[\textsf{Exactly 2 } Y\in \text{quarterbacks}, \forall y \in Y, \iota E: \thm(E
 $\exists Z\in \text{two-plays}, \goal({\color{red!80!black} E}) = Z \wedge \text{teach}({\color{red!80!black} E})]^{78}$\\
 \xe
 %
-The interpretation of this type of logical formula is deferred to a following chapter. As of now, everything's very impressionistic and we are left wondering if anything we said in the section on singular quantifiers still stands, given this new requirement of logical formulas.
+The interpretation of this type of logical formula is deferred to a following chapter. As of now, everything's very impressionistic and we are left wondering if anything we said in the section on singular quantifiers still stands, given this new requirement of logical formulas. One thing can be said about the intended interpretation of these anaphoric dependencies: Schein wants the anaphor to pick up all events in which some quarterback was taught a new play. This will be useful in what comes next.
 
-\section{title}
+\section{No more than one existential per sentence}
 
-Now comes the awaited evidence that every logical formula may only contain one existential quantifier. Problematically, this evidence builds upon all the assumptions we made so far about logical formulas, which themselves were made because of the assumptions that formulas may only contain one existential quantifier\ldots
+Now comes the awaited evidence that every logical formula may only contain one existential quantifier. Problematically, this evidence builds upon all the assumptions we made so far about logical formulas, which themselves were made because we assumed that formulas may only contain one existential quantifier\ldots
 
-The shape of the argument is as usual: some unavailable reading of a sentence can be made available if we are free to insert an existential quantifiers wherever we want. The sentence in question is the following:
+The shape of the argument is familiar: some unavailable reading of a sentence can be made available if we are free to insert an existential quantifiers wherever we want. The sentence in question is \cnextxa:
 
 \pex
 \a 
-Two video-games taught exactly three quarterbacks a new play each.
+Four video-games taught exactly three quarterbacks a new play each.\hfill *\cnextx[d]
+\a 
+Two video-games taught exactly three quarterbacks a new play each.\hfill $\checkmark$\cnextx[d]
 \a 
 \textbf{Target truth-conditions:}\\
-Two 
+there are three quarterbacks that two video-games taught a play to.
 \a 
+\renewcommand{\scale}{0.6}
 \textbf{Envisioned context:}\\
 \input{tikz/chap7_1.tex}
 \xe
 %
+The sentence in \clastxb is made true by the actions of the video-games in the blue dashed frame. However, the blue dashed frame is not true of \clastxa because less than four video-games did the teaching. It is not made true by the red dashed frame either because although four video-games did teach exactly three quarterbacks, they taught them more than one play. This reading serves a particular purpose within Schein's theory but it is useful to think about it from other theories as well. For instance, an event-less operator-based approach would predict that the sentence is true:
+
+\pex
+\a{}
+[four video games]  [three quarterback] **\textsubscript{At} [a play]
+\a \textbf{Predicted truth-conditions:} \\
+There are four video-games $X$, three quarterbacks $Y$\\
+every one of $X$ taught one of $Y$ a play\\
+every one of $Y$ was taught a play by one of $X$
+\xe
+%
+The singular indefinite \emph{a play} is key in generating the reading here. Taking the almost equivalent \quo{one or more plays} yields truth according to my own intuitions:
+
+\ex
+Four video-games taught exactly three quarterback one or more plays.
+\xe
+%
+Returning to our local concerns, Schein envisions two logical formulas for the mysterious reading. One that would make use of existential quantification twice and the other just once, conforming to the condition we are trying to evidence.
+
+\pex
+\a 
+$\exists X\in \text{three-video-games}, \ag({\color{red!80!black}\textsf{pro}_{78}}) = X \wedge $\\
+$[\textsf{Exactly 2 } Y\in \text{quarterbacks}, \forall y \in Y, \iota E: \thm(E) = y \wedge \text{teach}(E),$\\
+$\exists Z\in \text{two-plays}, \goal({\color{red!80!black} E}) = Z \wedge \text{teach}({\color{red!80!black} E})]^{78}$\\
+\a 
+$\exists X\in \text{three-video-games}, \ag({\color{red!80!black}\textsf{pro}_{78}}) = X \wedge $\\
+$[\textsf{Exactly 2 } Y\in \text{quarterbacks}, \forall y \in Y, \iota E: \thm(E) = y \wedge \text{teach}(E), {\color{blue!80!black} \exists E,}$\\
+$\exists Z\in \text{two-plays}, \goal({\color{red!80!black} E}) = Z \wedge \text{teach}({\color{red!80!black} E})]^{78}$\\
+\xe
+%
+\clastxb creates problems.The blue existential in \clastxb allows us to nullify the effect of maximality introduced by the preceding $\iota E$. In other words, instead of requiring that \quo{all that the quarterback $y$ was taught was a new play} as in \clastxa, it is now only required that \quo{\underline{part} of what the quarterback was taught was a new play}. Thus the event described by $g(78)$ may contain for each quarterback more than one play. The red dashed frame for instance is a possible value for $g(78)$ and in that event, it is true that 4 video-games taught.
+
 
 
 \end{document}

@@ -1,0 +1,108 @@
+%&plurals_event
+% %PRECOMPILE COMMAND pdftex -ini -jobname="plurals_event_chap_34" "&pdflatex" mylatexformat.ltx plurals_event_chap_34.tex
+% \documentclass[english]{article}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+% \usepackage[sort]{natbib}
+% \usepackage{stdprmbl}
+
+% \usepackage{parskip}
+
+% \lingset{interpartskip = -5pt}
+% \lingset{aboveexskip = 3pt,belowexskip = 3pt, belowpreambleskip = -3pt}
+
+% \definecolor{darkred}{rgb}{0.7,0,0}
+% \definecolor{blueish}{rgb}{0,0,0.7}
+% \newcommand{\ag}{\textsc{Agent}}
+% \newcommand{\thm}{\textsc{Theme}}
+% \newcommand{\goal}{\textsc{Goal}}
+
+% \newcommand{\fg}{\color{darkred}}
+% \newcommand{\bg}{\color{blueish}}
+
+
+\endofdump
+
+\newcommand{\scale}{1}
+
+\title{Plurals and events (chap. 8) : Semi-distributivity}
+\author{Keny Chatain}
+
+\begin{document}
+\maketitle
+
+This chapter is concerned with semidistributive quantifiers. This is what Schein calls quantifiers which for him, must be singular, despite being marked in plurals and combining with collective predicates. In the first section, Schein reiterates and refomulates arguments from chap. 3 that these quantifiers are indeed quantifiers over singularities.
+
+\section{Argument 1: split-scope effects (repeated from chap. 3)}
+
+To appreciate this argument, observe that singular quantifiers won't in general be able to combine with collective predicate:
+
+\pex \label{two_case}
+\a 
+\ljudge* $Q x\in P,\ \ag(e) = x \wedge \text{collaborate}(e)$
+\footnote{
+The LF we convened on in the last chapter included maximality operators. I suppress those here whenever it's simpler for the sake of the argument.
+}
+\a 
+\ljudge{$\checkmark$} $Q X\in P,\ \ag(e) = X \wedge \text{collaborate}(e)$
+\xe
+%
+Thus, a quantifier over singularities can only combine with a collective predicate through the mediation of another quantifier. For instance, the quantifier in {\bg blue} below would do the trick:
+
+\ex
+\ljudge{$\checkmark$} $Q x\in P, {\bg \exists x\prec X,}\ \ag(e) = X \wedge \text{collaborate}(e)$
+\xe
+%
+What Schein shows is that the {\bg blue} quantifier shows split-scope effects. Split-scope is unexpected if the LF only contain one quantifier as in \cref{two_case}[b]. The case in point is the following:
+
+\pex
+\a
+Few composers collaborated on less than four operas.
+\a 
+\textbf{Intuitive TCs:}
+\emph{Many composers have more than 3 collaborative pieces}
+\xe
+%
+Note that the TCs are perfectly predicted by a split-scope LF, not by a simple scope LF:
+
+\pex
+\a 
+$\textsf{few }x \in \text{composer}, <4\ y\in \text{operas}, {\bg \exists x\prec X (\in \text{composer})},\ X\text{ collaborated on }y$
+\a 
+$\textsf{few }x \in \text{composer}, {\bg \exists x\prec X (\in \text{composer})}, <4\ y\in \text{operas},\ X\text{ collaborated on }y$\label{bad}
+$\approx$ \emph{some composers never collaborated}
+\xe
+%
+The predictions of a plural quantifier depend on our exact definitions of \emph{few}. Here is one that is adequate for simple cases involving collective action is the following:
+
+\pex
+\a
+Few composers collaborated.
+\a 
+$\dbb{few\textsubscript{Pl} P Q}$ true iff $|\bigoplus P\cap Q|$ is little\\
+(\emph{the sum of all groups of composers that collaborated is small}\footnote{
+The literature has conflicting claims about the TC of \cnextxa. For instance, Buccola \& Spector consider the sentence if all groups are few in number. Schein's reading is stronger even: he sums collaborators up. The one consultant I asked got Schein's reading without coercion on my part.
+})
+\xe
+%
+However, Schein notes that this denotation is in fact a transparent bundle of first-order quantifier and the {\bg blue} quantifier. 
+
+\ex
+ few\textsubscript{pl}$\Leftrightarrow$ $\textsf{few }x \in \text{composer}, {\bg \exists x\prec X (\in \text{composer})},$
+\xe
+%
+This means that the plural approach can only derive a meaning equivalent to \cref{bad}.
+
+\paragraph{Schein's argument in 2020.} 
+A lot of progress/regress has been made on the semantics of numerals. Does Schein's argument still hold up? One thing that change is the idea that numeral quantification and existential quantification must be separated. A plural \emph{few} bundles both an existential quantifier and cardinality modifier:
+
+\pex
+\a 
+few \ldots [$\exists$ composers] \ldots collaborated
+\a 
+\xe
+%
+
+
+
+\end{document}

@@ -1,28 +1,40 @@
 \begin{tikzpicture}[scale = \scale]
-\node (v1) at (2.5,1.5) {video-game 1};
+\node (v1) at (5.5,1.5) {video-game 1};
 \node (v2) at (-0.5,2.5) {quarterback 1};
 \node (v4) at (-0.5,0.5) {quarterback 2};
-\node (v5) at (2.5,-0.5) {video-game 2};
-\node (v6) at (-0.5,-0.5) {quarterback 3};
-\node (v7) at (2.5,-1.5) {video-game 3};
-\node (v8) at (-0.5,-1.5) {quarterback 4};
-\node (v3) at (-4,2.5) {play};
-\node (v10) at (-4,0.5) {play};
-\node (v11) at (-4,-0.5) {play};
-\node (v12) at (-4,-1.5) {play};
+\node (v5) at (5.5,-0.5) {video-game 2};
+\node (v6) at (-0.5,-1) {quarterback 3};
+\node (v7) at (5.4,3.6) {video-game 3};
+
+\node (v3) at (-4.95,1.8) {play};
+\node (v10) at (-5,0.5) {play};
+\node (v11) at (-5,-0.5) {play};
+\node (v12) at (-4.95,3.6) {play};
 
 \draw [line width = 1pt] (v1) edge (v2);
 \draw [line width = 1pt] (v2) edge (v3);
 \draw [line width = 1pt] (v1) edge (v4);
 
 \draw [line width = 1pt] (v5) edge (v6);
-\draw [line width = 1pt] (v7) edge (v8);
+
 \draw [line width = 1pt] (v4) edge (v10);
 \draw [line width = 1pt] (v6) edge (v11);
-\draw [line width = 1pt] (v8) edge (v12);
-\node (v14) at (2.5,-2.5) {video-game 4};
-\node (v13) at (-0.5,-2.5) {quarterback 5};
-\node (v9) at (-4,-2.5) {play};
+
+\node (v14) at (5.5,-3.5) {video-game 4};
+\node (v13) at (-0.5,-3.5) {quarterback 5};
+\node (v9) at (-5,-3.5) {play};
 \draw [line width = 1pt] (v9) edge (v13);
 \draw [line width = 1pt] (v14) edge (v13);
+\draw [rounded corners = 10pt, dashed, blue] (-6,3) rectangle (7.25,-1.25);
+
+
+
+\node (v15) at (-5,-1.5) {play};
+\node (v16) at (5.5,-1.5) {video-game 3};
+\draw [line width = 1pt] (v15) edge (v6);
+\draw [line width = 1pt] (v6) edge (v16);
+\draw [line width = 1pt] (v12) edge (v2);
+
+\draw [line width = 1pt] (v7) edge (v2);
+\draw [rounded corners = 10pt, dashed, red] (-6.3,4.5) rectangle (7.65,-2.25);
 \end{tikzpicture}
