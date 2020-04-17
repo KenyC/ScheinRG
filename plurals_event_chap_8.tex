@@ -13,9 +13,9 @@
 
 % \definecolor{darkred}{rgb}{0.7,0,0}
 % \definecolor{blueish}{rgb}{0,0,0.7}
-% \newcommand{\ag}{\textsc{Agent}}
-% \newcommand{\thm}{\textsc{Theme}}
-% \newcommand{\goal}{\textsc{Goal}}
+% \newcommand{\ag}{\textsc{Agent}\xspace}
+% \newcommand{\thm}{\textsc{Theme}\xspace}
+% \newcommand{\goal}{\textsc{Goal}\xspace}
 
 % \newcommand{\fg}{\color{darkred}}
 % \newcommand{\bg}{\color{blueish}}
@@ -31,9 +31,12 @@
 \begin{document}
 \maketitle
 
-This chapter is concerned with semidistributive quantifiers. This is what Schein calls quantifiers which for him, must be singular, despite being marked in plurals and combining with collective predicates. In the first section, Schein reiterates and refomulates arguments from chap. 3 that these quantifiers are indeed quantifiers over singularities.
+This chapter is concerned with semi-distributive quantifiers. This is what Schein calls quantifiers which for him, must be singular, despite being marked in plurals and combining with collective predicates. In the first section, Schein reiterates and refomulates arguments from chap. 3 that these quantifiers are indeed quantifiers over singularities and draws conclusions about the nature of the element that allows singular quantifiers to combine with collective predicates
 
-\section{Argument 1: split-scope effects (repeated from chap. 3)}
+\section{Argument for singular quantification}
+\subsection{Argument 1: split-scope effects (repeated from chap. 3)}
+
+This first argument shows that we cannot deal with \emph{few}, unless we decompose into two parts: a singular part and and a part that introduces pluralities.
 
 To appreciate this argument, observe that singular quantifiers won't in general be able to combine with collective predicate:
 
@@ -41,19 +44,19 @@ To appreciate this argument, observe that singular quantifiers won't in general 
 \a 
 \ljudge* $Q x\in P,\ \ag(e) = x \wedge \text{collaborate}(e)$
 \footnote{
-The LF we convened on in the last chapter included maximality operators. I suppress those here whenever it's simpler for the sake of the argument.
+The logical formula we convened on in the last chapter included maximality operators. I suppress those here whenever it's simpler for the sake of the argument.
 }
 \a 
 \ljudge{$\checkmark$} $Q X\in P,\ \ag(e) = X \wedge \text{collaborate}(e)$
 \xe
 %
-Thus, a quantifier over singularities can only combine with a collective predicate through the mediation of another quantifier. For instance, the quantifier in {\bg blue} below would do the trick:
+Thus, a quantifier over singularities can only combine with a collective predicate through the mediation of another quantifier. For instance, the quantifier in {\bg blue} below, which I will call the participative quantifier, would do the trick:
 
 \ex
 \ljudge{$\checkmark$} $Q x\in P, {\bg \exists x\prec X,}\ \ag(e) = X \wedge \text{collaborate}(e)$
 \xe
 %
-What Schein shows is that the {\bg blue} quantifier shows split-scope effects. Split-scope is unexpected if the LF only contain one quantifier as in \cref{two_case}[b]. The case in point is the following:
+What Schein shows is that the {\bg participative} quantifier shows split-scope effects. Split-scope is unexpected if the logical formula only contains one quantifier as in \cref{two_case}[b]. The case in point is the following:
 
 \pex
 \a
@@ -63,7 +66,7 @@ Few composers collaborated on less than four operas.
 \emph{Many composers have more than 3 collaborative pieces}
 \xe
 %
-Note that the TCs are perfectly predicted by a split-scope LF, not by a simple scope LF:
+Note that the TCs are perfectly predicted by a split-scope logical formula, not by a simple scope logical formula:
 
 \pex
 \a 
@@ -80,12 +83,12 @@ The predictions of a plural quantifier depend on our exact definitions of \emph{
 Few composers collaborated.
 \a 
 $\dbb{few\textsubscript{Pl} P Q}$ true iff $|\bigoplus P\cap Q|$ is little\\
-(\emph{the sum of all groups of composers that collaborated is small}\footnote{
+(\emph{the sum of all groups of composers that collaborated is small})\footnote{
 The literature has conflicting claims about the TC of \cnextxa. For instance, Buccola \& Spector consider the sentence if all groups are few in number. Schein's reading is stronger even: he sums collaborators up. The one consultant I asked got Schein's reading without coercion on my part.
 })
 \xe
 %
-However, Schein notes that this denotation is in fact a transparent bundle of first-order quantifier and the {\bg blue} quantifier. 
+However, Schein notes that this denotation is in fact a transparent bundle of first-order quantifier and the {\bg participative} quantifier. 
 
 \ex
  few\textsubscript{pl}$\Leftrightarrow$ $\textsf{few }x \in \text{composer}, {\bg \exists x\prec X (\in \text{composer})},$
@@ -98,10 +101,155 @@ A lot of progress/regress has been made on the semantics of numerals. Does Schei
 
 \pex
 \a 
-few \ldots [$\exists$ composers] \ldots collaborated
+few [$\exists$ composers] collaborated
 \a 
+$\dbb{few} = \lambda p_{nt}.\ \max p$ is little
 \xe
 %
+The logical formula in \clastxa gives rise to Buccola \& Spector's truth conditions if the predicate \emph{collaborate} is not closed under sums, and to Schein's reading if it is\footnote{As I remarked in an earlier chapter, the closure under sums seems to not yield the \emph{default} reading of collective verbs. \emph{Four composers gathered} is naturally interpreted as one gathering, not multiple.}. 
+
+The truth conditions of sentences with multiple numerals are tricky to compute in this system. Here are the simplest ones
+
+\ex
+few \ldots  [$\exists$ composers\textsubscript{X}]  \ldots <4 operas\textsubscript{Y} \ldots  $X$ collaborated on $Y$
+\xe
+%
+As we can see, this still has overly weak TCs. It's a mystery how we would rule this out. However, as I noted in chapter 3, treating the quantifier as singular is not the only way we can make sense of Schein's readings. Once we notice,
+
+\ex
+Hammerschmidt collaborated on less than four operas.
+\xe
+%
+\subsection{Argument 2: bound pronouns} % (fold)
+
+Having established that the participatory quantifier takes narrow scope ; we now observe that it cannot in fact bind pronouns in the expected way.
+The argument consists in exhibiting cases of binding of plural pronouns that are bound by \emph{few}, but not by the participative quantifier\footnote{If my interpretation is correct, and my level of confidence here is low, then the logic of the argument here is flawed. Exhibiting one case where binding is not effected by the participatory quantifier does not in no way show that the partcipatory quantifier may not bind.
+}. 
+
+The sentence and reading of interest:
+\footnote{Not clear to me that this reading is actually available ; the reference to \emph{they} seems out of place to me.
+}
+
+\pex
+\a
+Few vaudevillians danced together to every ballad that {\bg they} sang together.
+\a
+\textbf{Target TC:}\\
+\emph{few vaudevillians are such that:}\\
+\emph{for every ballad that they sang within some group $G$}\\
+\emph{they danced within $G$}
+\xe
+%
+This sentence has a scope paradox built into it: the pronoun is bound by the participatory quantifier: it is talking about groups that both sang and danced together. Problematically, the participatory quantifier is intended to be read with scope within \emph{every}: there is one group per sung ballad.
+
+\ex
+few vaudevillians $\lambda x.$ \ldots every ballad that {\bg they} sang together \ldots {\bg $\exists x\prec X$} danced together
+\xe
+%
+(I initially thought the problem would extend to the plural denotation considered above but surprisingly perhaps, these denotations derive the correct reading)
+
+\pex
+\a 
+$\dbb{few\textsubscript{Pl} P Q}$ true iff $|\bigoplus P\cap Q|$ is little\\
+(\emph{the sum of all groups of composers that collaborated is small})
+\a 
+few vaudevillians $\lambda X.$ \ldots every ballad that {\bg they}($=X$) sang together \ldots {\bg $X$} danced together
+
+\xe
+%
+Schein considers and rejects one possible logical formula that achieves both the narrow scope of the existential quantifier and binding:
+
+\ex
+$
+\textsf{few } x\in\text{vaudevillian}, \forall y\in\text{ballad},
+{\bg \exists x\prec X,} X\text{ sang together} \wedge X\text{ danced together}
+$
+\xe
+%
+In addition to the fact that this logical formula does not represent the correct reading, it does not seem to faithfully render the syntax of the clause, as it merges restriction and scope of the quantifier. Schein spends one page arguing against this syntax but I don't think it is necessary to dwell on the issue.
+
+\paragraph{What now?}
+If the participatory quantifier is not responsible for binding, then what is? Schein suggests that we're dealing with an E-type pronoun (!). The sente
+
+\ex
+Few vaudevillians danced together to every ballad that {\bg the dancers} sang together.
+\xe
+%
+
+\section{Semi-distributivity}
+
+The readings that can be paraphrased with the participatory quantifier is called \emph{semi-distributive}. The goal of the chapter is to develop the tools to approach these cases. 
+
+Schein provides an example of a sentence where either the subject or the object or both can be read semi-distributively. We are asked to imagine a restaurant that compartmentalizes banquet areas with trellis. Trellis may be foldable so that one trellis may enclose multiple areas
+
+\pex
+Three trellis isolated no more than 5 banquet areas
+\a 
+\textbf{No semi-distributivity:} 
+Each trellis separated no more than 5 banquet areas from all the others
+\a
+\textbf{Subject and object semi-distributivity:}\\
+The number of trellis used is 3 and the number of enclosed areas is less than 6.
+\a 
+\textbf{Subject semi-distributivity:}\\
+The number of enclosed areas is less than 6 and they were each enclosed by one of the three trellis.
+\a 
+\textbf{Object semi-distributivity:}\\
+Each trellis enclosed an area that contained no more than 5 banquet areas
+\xe
+%
+These case are confusing to me because they do not seem to involve any participatory quantifier. As a result, they smell like cumulativity to me.
+
+\subsection{Formalization}
+Schein, for the reasons reviewed, believes these cases should be dealt with by singular quantifier (first-order quantifiers). He proposed to incorporate the participatory quantifier into the thematic role. So he'll use the \textsf{Co-} operator on thematic
+
+\pex Preliminary
+\a \textbf{Logical formula:}
+$\textsf{Co-}\theta(x, E)$
+\a \textbf{Model-theoretic interpretation:}\\
+$\exists X\ni x,\ \theta (X, E)$
+\xe
+%
+This is essentially the participatory quantifier packed into one thematic role. There is one small hiccup: \cnextx need not be understood as collaborations of composers. Indeed, nothing requires the $X$ in \clastxb to be a group of composers
+
+\ex
+Few composers collaborated
+\xe
+%
+(I'm not sure that this is in fact a problem, given the following sentences:)
+
+\pex
+\a 
+Few German composers collaborated on less than four operas.\\
+$\rightsquigarrow$ \emph{German composers are heavy collaborators, within themselves or with others}\\
+$\not\rightsquigarrow$ \emph{German composers are heavy collaborators within themselves}
+\a 
+Hammerschmidt collaborated on less than four operas.
+\xe
+%
+In any case, Schein fixes it by copying the restrictor of the quantifier in the \textsf{Co-} operator
+
+\pex Preliminary
+\a \textbf{Logical formula:}
+$\textsf{Co-}\theta(x, E)$
+\a \textbf{Model-theoretic interpretation:}\\
+$\exists X\ni x,\ X\subset\dbb{NP}\wedge \theta (X, E)$
+\xe
+%
+Gathering our assumptions up till now, we can form the logical formula for \cnextxa
+
+\pex
+\a 
+Few composers collaborated on less than four operas
+\a 
+$\textsf{few }x\in\text{composers}, \iota E: \textsf{Co}\text{-composers-}\ag(x, E)\wedge \text{collaborate}(E),$ \\
+$<\!4\ Y\in\text{operas},\ \textsf{Co}\text{-composers-}\ag(x, E) \wedge \text{collaborate}(E)\wedge \textsc{on}(Y, E) $
+\xe
+%
+However, this logical formula puts the participatory quantifier next to \emph{few}, which one may take to mean means that it will yield the unintended interpretation! 
+
+It is rather confusing but the logical formula, as I understand it, actually yields the correct interpretation. 
+Rather than the problematic interpretation where all it itakes is a single group that does not collaborate at all, there is no particular group that the \ag in $\iota E$ makes reference to. The first \ag in  $\iota E$ simply helps gather all the collaborations of a particular composer. Then the embedded quantifier can assert that this event counted less than four operas.
 
 
 
