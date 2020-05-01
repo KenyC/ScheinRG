@@ -1,0 +1,10 @@
+%!TEX root = ../plurals_event_chap_9.tex
+\begin{tikzpicture}[scale = \scale, baseline = {([yshift={-\ht\strutbox}]current bounding box.north)}]
+\node[anchor = east] (v1) at (-3,1.5) {Less than 2 detectives $\lambda X.$};
+\node[anchor = east] (v3) at (-3,0.5) {Less than 3 crimes $\lambda Y.$};
+\node[anchor = east] (v4) at (-3,-0.5) {Less than 2 agencies $\lambda Z.$};
+\node (v2) at (0,0.5) {$X$ solved $Y$ for $Z$};
+\draw [->,line width = 1.5pt] (v1.east) edge (v2);
+\draw [->, line width = 1.5pt] (v3.east) edge (v2);
+\draw [->, line width = 1.5pt] (v4.east) edge (v2);
+\end{tikzpicture}

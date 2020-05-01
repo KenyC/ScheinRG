@@ -1,0 +1,32 @@
+%!TEX root = ../plurals_event_chap_9.tex
+\begin{tikzpicture}[scale = \scale, baseline = {([yshift={-\ht\strutbox}]current bounding box.north)}]
+
+\node (v3) at (2.5,2.5) {agency};
+\node (v12) at (2.5,0.5) {agency};
+\node (v6) at (2.5,-0.5) {agency};
+\node (v8) at (2.5,-1.5) {agency};
+\node (v10) at (2.5,-2.5) {agency};
+\node (v4) at (2.5,1.5) {agency};
+
+\node (v2) at (-0.5,1.5) {crime};
+\node (v5) at (-0.5,-0.5) {crime};
+\node (v7) at (-0.5,-1.5) {crime};
+\node (v9) at (-0.5,-2.5) {crime};
+
+\node (v1) at (-4,1.5) {detective};
+\node (v11) at (-4,-1.5) {detective};
+
+
+
+\draw [line width = 1pt] (v2) edge (v3);
+\draw [line width = 1pt] (v2) edge (v4);
+\draw [line width = 1pt] (v5) edge (v6);
+\draw [line width = 1pt] (v7) edge (v8);
+\draw [line width = 1pt] (v9) edge (v10);
+\draw [line width = 1pt] (v11) edge (v5);
+\draw [line width = 1pt] (v11) edge (v7);
+\draw [line width = 1pt] (v11) edge (v9);
+\draw [line width = 1pt] (v1) edge (v2);
+\draw [line width = 1pt] (v2) edge (v12);
+
+\end{tikzpicture}
