@@ -1,0 +1,23 @@
+%!TEX root = ../plurals_event_chap_9.tex
+\begin{tikzpicture}[scale = \scale, baseline = {([yshift={-\ht\strutbox}]current bounding box.north)}]
+
+
+\node (v1) at (-5,-0.5) {detectives};
+\node (v2) at (-2.5,0.5) {crime};
+\node (v3) at (-2.5,-1.5) {crime};
+\node (v4) at (0,0.5) {agency};
+\node (v8) at (0,-1.5) {agency};
+
+\node (v5) at (3,0.5) {crime};
+\node (v7) at (3,-1.5) {crime};
+
+\node (v6) at (5.5,-0.5) {detectives};
+\draw [line width = 1pt] (v1) edge (v2);
+\draw [line width = 1pt] (v1) edge (v3);
+\draw [line width = 1pt] (v2) edge (v4);
+\draw [line width = 1pt] (v4) edge (v5);
+\draw [line width = 1pt] (v5) edge (v6);
+\draw [line width = 1pt] (v6) edge (v7);
+\draw [line width = 1pt] (v7) edge (v8);
+\draw [line width = 1pt] (v3) edge (v8);
+\end{tikzpicture}

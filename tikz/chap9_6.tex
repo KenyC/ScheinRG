@@ -1,0 +1,27 @@
+%!TEX root = ../plurals_event_chap_9.tex
+\begin{tikzpicture}[scale = \scale, baseline = {([yshift={-\ht\strutbox}]current bounding box.north)}]
+
+
+\node (v1) at (-5,-0.5) {official};
+\node (v2) at (-2.5,0.5) {document};
+\node (v3) at (-2.5,-1.5) {document};
+\node (v4) at (0,0.5) {superpower};
+\node (v8) at (0,-1.5) {superpower};
+
+\node (v5) at (3,0.5) {document};
+\node (v7) at (3,-1.5) {document};
+
+\node (v6) at (5.5,-0.5) {official};
+\draw [line width = 1pt] (v1) edge (v2);
+\draw [line width = 1pt] (v1) edge (v3);
+\draw [line width = 1pt] (v2) edge (v4);
+\draw [line width = 1pt] (v4) edge (v5);
+\draw [line width = 1pt] (v5) edge (v6);
+\draw [line width = 1pt] (v6) edge (v7);
+\draw [line width = 1pt] (v7) edge (v8);
+\draw [line width = 1pt] (v3) edge (v8);
+\draw [dotted, line width = 0.5pt] plot[smooth cycle, tension=.7] coordinates {(-4.8,0.3) (-5.7,-0.9) (0.9,0) (1.2,0.9) (-3,0.9)};
+\draw [dotted, line width = 0.5pt] plot[smooth cycle, tension=.7] coordinates {(-2.4,-1.8) (0.9,-1.8) (0.9,-1.2) (-4.8,0) (-5.1,-1.5)};
+\draw [dotted, line width = 0.5pt] plot[smooth cycle, tension=.7] coordinates {(-0.9,0) (-0.6,1.2) (4,1) (6.5,-0.5) (5.4,-0.9) (3.3,-0.3)};
+\draw [dotted, line width = 0.5pt] plot[smooth cycle, tension=.7] coordinates {(-0.9,-2.1) (-0.9,-0.9) (2.4,-0.9) (5.1,0) (6.3,0) (6.9,-1.2) (5.1,-1.5) (1.8,-2.1)};
+\end{tikzpicture}

@@ -159,6 +159,22 @@ Exactly two detectives each reported exactly two crimes to agencies\\
 To exactly three agencies did detectives \textbf{each} report exactly two crimes\\
 \xe
 %
+In a later section, Schein spells out what seems to me to be a different, and I think better argument for symmetric logical forms. 
+
+The idea is that symmetric logical forms overgenerate readings. In particular, if both quantifiers that enter the cumulative relationship are interpreted distributively in the logical formula:
+
+\ex
+Exactly two detectives each solved exactly two crimes for agencies \emph{and}\\
+Exactly two agencies are each such that detectives solved crimes for them
+\xe
+%
+Here, to verify the sentence under the reading: we need to find two crimes per agencies and two crimes per detectives. But the crimes solved for the agencies need not correspond to the crimes solved by the detectives one-to-one:
+
+\ex
+\input{tikz/chap9_8}
+\xe
+%
+
 
 \section{What is the reference of the event anaphor}
 
@@ -322,11 +338,232 @@ But there may be other ways of doing donkeys with Schein's tools.
 Less than 3 detectives each solved exactly two crimes for less than three agencies.
 \a 
 \textbf{Schein's paraphrases:}\\
-\emph{[less than 3 detectives solved crimes for agencies]\textsubscript{78}}\\
-\emph{there\textsubscript{78}, detectives solved crimes for less than three agencies}
+\emph{[less than 3 detectives solved exactly two crimes for agencies]\textsubscript{78}}\\
+\emph{there\textsubscript{78}, detectives each solved exactly two crimes for less than three agencies}
 \xe
 %
+Indeed, in the context of \cnextx, the clause 78 is rendered by the empty event (no detectives solved exactly two crimes). So it is true that for less than three agencies, exactly two crimes were solved.
+
+\ex
 \input{tikz/chap9_4}
+\xe
+%
+But there is a problem in the lurking with DE quantifiers, if the quantifier that does not enter the cumulative relation is a DE quantifier, as in \cnextx:
+
+\pex
+\a 
+Exactly two detectives solved no crimes for exactly two agencies
+\a 
+\textbf{Schein's paraphrases:}\\
+\emph{[exactly two detectives solved solved no crimes for agencies]\textsubscript{78}}\\
+\emph{there\textsubscript{78}, detectives each solved crimes for exactly two agencies}
+\xe
+%
+Here, no event renders clause 78. So the second clause is falsified, no matter what the actual context is like. Schein reports his solution to a later stage.
+
+To reassure the reader though, he just notes in \cnextx that DE quantifiers do indeed antecede ordinary pronouns, without introducing $\exists$ inference. So even Schein's modeling of anaphoric dependencies need to be modified, there is hope that some solution is possible.
+
+\ex
+Few\textsubscript{89} senators voted for JFK and they\textsubscript{89} supported all Democrats' bills.
+\xe
+%
+Schein believes this does not imply the existence of anyone voting for JFK. I'm not so certain:
+
+\ex
+I bet that few senators will vote for JFK and they will support all Democrats' bills.
+\xe
+%
+
+\section{Cumulative readings may be symmetric}
+
+\paragraph{Symmetric readings.}
+After convincing us that cumulative readings are by nature asymmetric, Schein considers an exception which he attributes to May, given in \cnextxa. In this reading, {\fg red} arguments enter a cumulative relation and the {\bg blue} argument is interpreted distributively wrt both of them.
+
+\pex
+\a 
+{\fg Two officials} sold {\bg two secret documents} to {\fg two superpowers}.\label{symmetric}
+\a 
+Gather all pairs $(x, y)$ of official-super power such that $x$ sold two secret documents to $y$\\
+These pairs must involve two officials and two superpowers
+\xe
+%
+Note that this sentence comes very close in meaning to the sentences we used to evidence asymmetric reading repeated in \cnextx. In the asymmetric reading, the {\bg blue} argument is only distributive wrt the subject
+
+\ex
+{\fg Less than 3 detectives} each solved {\bg exactly two crimes} for {\fg less than three agencies}.
+\xe
+%
+Schein notes that symmetric readings are problematic for his asymmetric LFs. For instance, the scenario depicted in \cnextxc falsifies the symmetric reading but verifies the asymmetric LF that Schein would assign \cref{symmetric}, paraphrased in \cnextxb:
+
+\pex
+\a 
+{\fg Two officials} sold {\bg two secret documents} to {\fg two superpowers}.\label{symmetric}
+\a
+Two officials sold two secret documents each to two super-powers \emph{and}\\
+There, to two super-powers were two secret documents each sold
+\a 
+\input{tikz/chap9_5}
+\xe
+%
+Schein is vague on this point but I don't know the doubly-distributive reading he does that he predicts is present.
+
+\paragraph{Reason for skepticism.} 
+Acknowledging these readings might lead us to an analysis with a binary quantifier over pairs, as May recommended.
+
+However, Schein has reasons to be skeptical. He finds that the target reading is not as easily available in all configurations.
+He finds the reading unobjectionable if the {\bg blue} argument is an increasing quantifier but the reading for the non-increasing quantifier, he judges to be contrived.
+
+\pex
+\a 
+\ljudge? {\fg Two officials} sold {\bg no more than six documents} to {\fg two superpowers}
+\a 
+\ljudge? {\fg Two officials} sold {\bg no documents} to {\fg two superpowers}
+\xe
+%
+This is motivation to pursue a new analysis in terms of the asymmetric analysis we have been assuming so far
+
+\paragraph{Pragmatic solution: contexts of events.} Schein first proposes that May's readings may come about when the context only makes available events where one official sells to one superpower. In other words, the only events made available in the context considered above would be the one circled in \cnextx:
+
+\ex
+\input{tikz/chap9_6}
+\xe
+%
+With this restriction on the set of events, 
+The asymmetric paraphrase in \cnextxb correctly falsifies \cnextxa:
+
+\ex
+For each of two officials $x$, there is an event \underline{in the context} where $x$ sells two secret documents to super-powers \emph{and}
+There, two super-powers were sold documents to
+\xe
+%
+It seems that Schein has taken liberties with the logical formulas to derive this resuit:
+
+\begin{itemize}
+\item \emph{two officials} scopes above event closure.
+\item \emph{two secret documents} is not repeated in the pronominal clause.
+\end{itemize}
+%
+But since he will end up adopting a different analysis, let's look past that\footnote{
+I am also missing part of the reasoning there. Schein presents a problem to this analysis, which I don't think arises and proceeds to solve it. His solution however, does not seem to change anything to the logical formula used
+}. 
+
+\paragraph{Solution II: semantic solution.}
+Schein proposes an alternative purely semantic solution. So far, the cumulative logical formula involved a first conjunct which contained all but one of the quantifiers, the other quantifiers being replaced with low-scoping existentials. This conjunct served as antecedent
+
+\pex
+\a
+{\fg Two officials} sold two documents to {\bg super-powers} \emph{and}\\
+Two superpowers were sold two documents
+\a
+$\exists X : 2\text{ officials}, \forall x\in X, \exists Y : \text{super-powers},\ x$ sold documents to $y$ $\wedge$
+\ldots
+\xe
+%
+However, Schein notes the we do not have to interpret the {\bg blue} quantifier \emph{in situ} necessarily. In particular, as we've seen in previous chapters, we can scope {\bg super-powers} and interpret it distributively in the first conjunct. That seems enough for May's reading.
+
+\pex
+\a
+Two officials are each such that superpowers each received two documents from them.\\
+There, to two superpowers were documents sold.
+\a
+$\exists X : 2\text{ officials}, \forall x\in X, \exists Y : \text{super-powers}, \underline{\forall y\in Y},\ x$ sold two documents to $y$ $\wedge$\ldots
+\xe
+%
+
+\paragraph{Back to decreasing quantifiers.}
+Earlier, Schein observed that May's readings were possible but degraded.
+
+\pex
+\a 
+\ljudge? {\fg Two officials} sold {\bg no more than six documents} to {\fg two superpowers}
+\a 
+\ljudge? {\fg Two officials} sold {\bg no documents} to {\fg two superpowers}
+\xe
+%
+Under the asymmetric logical formula that Schein gives these sentences, cross-reference to events should fail. Negative events do not introduce referents.
+
+\ex
+$\exists X : 2\text{ officials}, \forall x\in X, \exists Y : \text{super-powers}, \forall y\in Y,\ x$ sold no documents to $y$ $\wedge$\ldots
+\xe
+%
+However, reference may be possible if the event existential which introduces event referents outscopes negation. That is to say, if the reference is to negative events. We can now tie the oddness of the sentence to the oddness of negative events:
+
+\ex
+$\exists X : 2\text{ officials}, \forall x\in X, \exists Y : \text{super-powers}, \forall y\in Y, \exists E, x$ sold no documents to $y$ $\wedge$\ldots
+\xe
+%
+
+
+\section{Syntactic constraints on cumulative readings}
+
+Schein observes (foreshadowing Beck \& Sauerland) that cumulative readings are not tied to single clause contexts:
+
+\ex
+No more than two detectives found solutions to no more than two problems.
+\xe
+%
+Schein's observation is that the pronominal clauses in his paraphrase will have to copy everything from both clauses:
+
+\ex
+No more than two detectives found solutions to problems \emph{and}\\
+To no more than two problems did detectives find solutions.
+\xe
+%
+I'm skipping much of the discussion of the biclausal cases that I didn't find particularly interesting
+
+\paragraph{Constraints on cumulative readings.}
+This is more interesting. Schein notes that adjuncts display an ambiguity in their cumulative readings.
+
+\pex
+Less than three people died because of less than five good samaritans.
+\a 
+\textbf{Cumulative Interpretation:} \emph{the number of casualties by good samaritans was less than 3 and less than 5 good samaritans occasioned casualties}
+\a 
+\textbf{\quo{Separated} interpretation:} \emph{the deah toll was less than 3 and less than 5 good samaritans made that outcome possible}
+\xe
+%
+I note that extraposition of the adjunct leads to an unmistakable \quo{separated interpretation}:
+
+\ex
+Less than three people died yesterday, because of less than 5 good samaritans.
+\xe
+%
+The separated interpretation seems to arise in Schein's system when each quantifier can QR within its own domain. When they do, no qunatifier takes scope above the other ; yet, this is not a cumulative reading as the two quantifiers do not have the same scope: each lives in its own domain.
+
+\pex
+\a 
+\textbf{Cumulative interpretation:}\\
+\Tikzmark{end1}{} \hspace{5ex} \Tikzmark{beg2}{Less than 3 people} died because of \Tikzmark{beg1}{less than 5 good samaritans}.\\[2ex]
+\DrawArrow{beg1}{end1}{below}{} % [tikz options-]beginning-end-position-text[- distance to line]
+\DrawArrow{beg2}{end1}{below}{}[2.5] % [tikz options-]beginning-end-position-text[- distance to line]
+\a \textbf{Separated interpretaion:}\\
+\Tikzmark{end2}{\hphantom{a}} \hspace{5ex} \Tikzmark{beg2}{Less than 3 people} died \Tikzmark{end1}{\hphantom{a}} because of \Tikzmark{beg1}{less than 5 good samaritans}.\\[2ex]
+\DrawArrow{beg1}{end1}{below}{} % [tikz options-]beginning-end-position-text[- distance to line]
+\DrawArrow{beg2}{end2}{below}{} % [tikz options-]beginning-end-position-text[- distance to line]
+\xe
+%
+
+
+The possibility of extraposition (which Schein confusingly calls \emph{separation}) diagnoses the presence of a syntactic domain in which QR may land, infers Schein. So if an argument finds itself in an extraposable domain where the other argument isn't, a separated interpretation is possible.
+
+To prove this in greater details, Schein constructs a number of examples in which extraposition is impossible and a cumulative reading is contradictory. He finds that in such sentences, only a distributive interpretation is possible:
+
+\pex Impossible extraposition
+ \a 
+ Few boys gave girls no nice roses
+ \a 
+ \textbf{Impossible separated reading:} \emph{Few boys gave girls anything. And they gave them no nice roses.}
+ \xe
+ %
+\pex~ Possible extraposition
+\a 
+Few boys gave roses to no nice girls.
+\a 
+ \textbf{Possible separated reading:} \emph{Few boys gave roses to anyone. And they gave them to no nice roses.}
+\xe
+%
+(I think an intonational break is required for these examples)
+
 
 
 \end{document}
